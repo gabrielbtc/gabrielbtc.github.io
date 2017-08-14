@@ -1,6 +1,5 @@
 body {
   background-color: #efefef;
-  font-family: 'Open Sans', sans-serif;
 }
 
 h1, h2, h3, h5, p {
@@ -36,13 +35,12 @@ h1, h2, h3, h5, p {
 .base-menu-lateral .base-localizacao h5 {
   font-size: 12px;
   font-weight: 700;
-  letter-spacing: 1px;
   margin: 0 0 12px 0;
   text-transform: uppercase;
 }
 
 .base-menu-lateral .base-botoes {
-  margin: 12px 0;
+  margin: 12px 0 18px 0;
 }
 
 .base-menu-lateral button {
@@ -55,7 +53,10 @@ h1, h2, h3, h5, p {
 }
 
 .base-conteudo {
-  margin: 24px 0 0 0;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 0 60px rbga(0,0,0,0.1);
+  margin: 24px 0 0 0; padding: 48px 36px;
 }
 
 .base-conteudo p {
@@ -63,3 +64,28 @@ h1, h2, h3, h5, p {
   line-height: 24px;
   margin: 12px 0 18px 0;
 }
+
+.base-conteudo h5 {
+  color: #858585;
+  margin: 18px 0 24px 0;
+}
+
+.base-conteudo button {
+  cursor: pointer;
+}
+
+.base-conteudo .base-expand {
+  margin: 18px 0;
+}
+
+.base-conteudo .base-expand ul {
+  list-style: none;
+  margin: 0 0 18px 0; padding: 0;
+}
+
+
+
+
+
+
+
