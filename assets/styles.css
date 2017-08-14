@@ -1,0 +1,65 @@
+body {
+  background-color: #efefef;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h5, p {
+  margin: 0; padding: 0;
+}
+
+.base-menu-lateral { 
+  border-radius: 8px;
+  background-color: #ffffff;
+  margin: 24px 0 0 0;  padding: 48px 36px;
+  box-shadow: 0 0 60px rgba(0,0,0,0.1);
+}
+
+.base-menu-lateral h1 {
+  color: #858585;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0 0 12px 0;
+}
+
+.base-menu-lateral h1 span {
+  font-size: 30px;
+}
+
+.base-menu-lateral h2 {
+  font-size: 18px;
+}
+
+.base-menu-lateral .base-localizacao {
+  margin: 18px 0 0 0;
+}
+
+.base-menu-lateral .base-localizacao h5 {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0 0 12px 0;
+  text-transform: uppercase;
+}
+
+.base-menu-lateral .base-botoes {
+  margin: 12px 0;
+}
+
+.base-menu-lateral button {
+  margin: 12px 0 0 0;
+  cursor: pointer;
+}
+
+.base-menu-lateral p.contato {
+  font-size: 12px;
+}
+
+.base-conteudo {
+  margin: 24px 0 0 0;
+}
+
+.base-conteudo p {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 12px 0 18px 0;
+}
