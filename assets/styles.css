@@ -122,9 +122,33 @@ h1, h2, h3, h5, p {
 
 
 .modal .base-contato {
-  padding: 12px;
+  display: flex;
   border-radius: 6px;
+  align-items: center;
   border: 1px solid #cccccc;
+  margin: 0; padding: 24px 12px;
+}
+
+.modal .base-contato h5 {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 6px 0; padding: 0;
+}
+
+.modal .base-contato p {
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0; padding: 0;
+}
+
+.modal .base-contato .base-foto {
+  flex: 1;
+  text-align: center;
+}
+
+.modal .base-contato .infos-contato {
+  flex: 4;
 }
 
 
