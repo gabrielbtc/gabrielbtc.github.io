@@ -101,9 +101,20 @@ h1, h2, h3, h5, p {
   margin: 18px 0;
 }
 
+.base-conteudo .base-expand h5 {
+  font-size: 18px;
+  color: #a287b0;
+  border-bottom: 1px solid #cccccc;
+  margin: 0; padding: 0 0 18px 0;
+}
+
 .base-conteudo .base-expand ul {
   list-style: none;
   margin: 0 0 18px 0; padding: 0;
+}
+
+.base-conteudo .base-expand .collapse + .collapse {
+  margin: 18px 0 0 0;
 }
 
 
