@@ -1,0 +1,303 @@
+@font-face {
+    font-family: 'Karmilla';
+    src: url('../fonts/karmilla/karmilla-regular.eot');
+    src: url('../fonts/karmilla/karmilla-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/karmilla/karmilla-regular.woff2') format('woff2'),
+         url('../fonts/karmilla/karmilla-regular.woff') format('woff'),
+         url('../fonts/karmilla/karmilla-regular.ttf') format('truetype'),
+         url('../fonts/karmilla/karmilla-regular.svg#Karmilla') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Karmilla Bold';
+    src: url('../fonts/karmilla/karmilla-bold.eot');
+    src: url('../fonts/karmilla/karmilla-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/karmilla/karmilla-bold.woff2') format('woff2'),
+         url('../fonts/karmilla/karmilla-bold.woff') format('woff'),
+         url('../fonts/karmilla/karmilla-bold.ttf') format('truetype'),
+         url('../fonts/karmilla/karmilla-bold.svg#Karmilla') format('svg');
+    font-weight: bold;
+    font-style: bold;
+}
+
+a {
+    color: #f6f1bf;
+}
+
+a:hover {
+    color: #f6f1bf;
+}
+
+.padd-l-0 {
+    padding-left: 0px;
+}
+.padd-r-0 {
+    padding-right: 0px;
+}
+.h-100pc {
+    height: 100%;
+}
+
+html {
+    height: 100%;
+   
+}
+
+body {
+    background: #efefef;
+    font-family: 'Karmilla';
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-font-smoothing:antialiased;
+    -webkit-text-size-adjust:100%
+}
+
+.container-fluid, .row {
+    height: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/***** MENU *****/
+
+
+.input-group.input-group-lg .form-control{
+    font-size: 14px;
+    height: 48px;
+    padding: auto 12px;
+    border-radius: 0px;
+    border: none;
+}
+
+.input-group.input-group-lg .btn{
+    font-size: 14px;
+    height: 48px;
+    padding: auto 24px;
+    border-radius: 0px;
+    border: 0px;
+}
+
+.logoBorn {
+    color: #ffffff;
+}
+
+.base-menu {
+    background: rgba(0,0,0,0.6);
+    min-height: 100%;
+    padding: 60px 48px 60px 84px;
+}
+
+.header {
+    text-align: right;
+    color: #ffffff;
+}
+
+.header h1{
+    padding: 0px; margin: 0px;
+}
+
+.search-tab {
+    padding-top: 48px;
+    color: #ffffff;
+}
+
+.search-tab input {
+    color: #323232;
+}
+
+.search-tab .last-patch {
+    margin-top: 48px;
+}
+
+.search-tab .last-patch a {
+    font-weight: bold;
+}
+
+.search-tab .last-patch div {
+    margin-top: 36px;
+}
+
+.search-tab .last-patch h2 {
+    font-family: 'Karmilla';
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.search-tab .last-patch h3 {
+    font-family: 'Karmilla Bold';
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.copyright {
+    padding-top: 132px;
+    color: #ffffff;
+    left: 84px;
+}
+
+
+/***** DETALHES CHAMPION *****/
+
+.champion-details {
+    margin-top: 60px;
+    text-align: right;
+    color: #ffffff;
+}
+
+.champion-details h2{
+    font-size: 36px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0px; padding: 0px;
+}
+
+.champion-details h3{
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0px; padding: 0px;
+}
+
+.champion-details .tag-born {
+    position: relative;
+    margin-top: 24px;
+}
+
+.champion-details .tag-born p {
+    font-size: 12px;
+    line-height: 12px;
+    padding-top: 4px;
+    padding-right: 108px; 
+}
+
+.champion-details .tag-born.buff:before {
+    content: "BUFF";
+    position: absolute;
+    background: #79b152;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 8px 24px;
+    text-align: center;
+    right: 0;
+}
+
+.base-infos {
+    background: #efefef;
+    min-height: 100%;
+}
+
+.base-infos .skills {
+    background: #323232;
+    padding: 60px 96px;
+ }
+
+.base-infos .skills ul{
+    display: flex;
+    margin: 0; padding: 0px;
+}
+
+.base-infos .skills ul li {
+    list-style: none;
+    flex: auto;
+    text-align: center;
+}
+
+.base-infos .skills ul li img {
+    opacity: 0.6;
+}
+
+.base-infos .skills ul li.active img{
+    opacity: 1;
+    outline: 4px solid #FFFFFF;
+    cursor: pointer;
+}
+
+.base-infos .skill-changes {
+    padding: 48px 96px;
+    height: 100%;
+    overflow: scroll-y;
+ }
+
+ .base-infos .skill-changes h2 {
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 0; padding: 0px;
+ }
+
+.base-infos .skill-changes .notes {
+    margin-top: 24px;
+}
+
+ .base-infos .skill-changes .notes div + div {
+    margin-top: 24px;
+ }
+
+.base-infos .skill-changes .notes h3 {
+    color: #858585;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0px; padding: 0px;
+}
+
+.base-infos .skill-changes .notes h3 + p span {
+    margin: 0 24px;
+}
+
+.base-infos .skill-changes .changes {
+    margin-top: 48px;
+}
+
+.base-infos .skill-changes .changes div {
+    position: relative;
+}
+
+.base-infos .skill-changes .changes div:before {
+    position: absolute;
+    content: "";
+    width: 12px; height: 12px;
+    border-radius: 50%;
+    left: -30px;
+    top: 6px;
+}
+
+.base-infos .skill-changes .changes .remove:before {
+    background: #b71111;
+} .base-infos .skill-changes .changes .add:before {
+    background: #79b152;
+}
+
+ .base-infos .skill-changes .changes div + div {
+    margin-top: 24px;
+ }
+
+.base-infos .skill-changes .changes h3 {
+    color: #858585;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0px; padding: 0px;
+}
+
+.base-infos .skill-changes .changes .remove h3{
+    color: #b71111;
+} .base-infos .skill-changes .changes .add h3{
+    color: #79b152;
+}
+
+.base-infos .skill-changes .changes .remove p {
+    color: #858585;
+}

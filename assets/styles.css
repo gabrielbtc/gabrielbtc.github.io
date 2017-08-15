@@ -1,0 +1,84 @@
+body {
+  color: #343a40;
+  background-color: #f8f9fa;
+}
+
+h1, h2, h3, h5, p {
+  margin: 0; padding: 0;
+}
+
+.base-resume {
+  padding: 4%;
+}
+
+.base-resume h1 {
+  font-size: 36px;
+  letter-spacing: -2px;
+}
+
+.base-resume h1 span {
+  font-size: 60px;
+  color: #007bff;
+  font-weight: 700;
+}
+
+.base-resume h2 {
+  font-size: 30px;
+  margin: 12px 0;
+  color: #323232;
+  font-weight: 300;
+}
+
+.base-resume p {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.base-resume p span {
+  color: #ccc;
+}
+
+.base-resume ul {
+  margin: 18px 0;
+  font-size: 14px;
+  padding: 0 24px;
+}
+
+.base-resume .base-contacts {
+  font-size: 14px;
+  margin: 24px 0 0;
+}
+
+.base-resume .base-contacts a {
+  font-weight: bold;
+  display: inline-block;
+  padding: 4px 6px;
+  color: #ffffff;
+}
+
+.base-resume p.actual {
+  color: #ffffff;
+  display: inline-block;
+  background-color: #343a40;
+  margin: 18px 0 0 0; padding: 2px 8px;
+}
+
+.base-resume p.actual a {
+  background-color: #f8f9fa;
+  margin: 0; padding: 1px;
+  color: #343a40;
+}
+
+.base-resume .base-links {
+  margin: 24px 0 0 0;
+}
+
+
+/******** MODAL ********/
+
+
+
+
+
+
+
