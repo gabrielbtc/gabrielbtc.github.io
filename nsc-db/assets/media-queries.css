@@ -1,0 +1,41 @@
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+
+	.base-resume {
+	  padding: 12% 2%;
+	}
+
+	.base-resume h1 {
+		font-size: 18px;
+	}
+
+	.base-resume h1 span {
+	  font-size: 36px;
+	}
+
+	.base-resume h2 {
+	  font-size: 24px;
+	}
+
+	.base-resume p.study {
+		display: block;
+		padding: 12px;
+	}
+
+	.base-resume p.study a {
+		display: inline-block;
+		margin: 8px 0; padding: 1px 2px;
+	}
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767px) { 
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991px) { ... }
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199px) { ... }
