@@ -142,13 +142,27 @@
 
 .base-filtro-busca .item .btn-collapse {
   width: 100%;
-  display: block;
+  display: flex;
   font-size: 24px;
   font-weight: 700;
   text-decoration: none;
   color: #4c4c4c;
   text-transform: uppercase;
   background-color: transparent;
+}
+
+.base-filtro-busca .item .btn-collapse > div {
+  flex: 6;
+}
+
+.base-filtro-busca .item .btn-collapse .base-icone {
+  flex: 1;
+  text-align: center;
+  transition: all .3s ease;
+}
+
+.base-filtro-busca .item .btn-collapse.collapsed .base-icone {
+  transform: rotate(180deg);
 }
 
 .base-filtro-busca .item .well {
@@ -203,7 +217,7 @@
   font-family: 'Lato', sans-serif;
 }
 
-a.base-vaga-box {
+.base-vaga-box {
   display: block;
   color: #323232;
   margin: 0 0 24px 0;
@@ -213,17 +227,17 @@ a.base-vaga-box {
   box-shadow: 0 0 60px rgba(0,0,0,0.1);
 }
 
-a.base-vaga-box:hover,
-a.base-vaga-box:focus {
+.base-vaga-box:hover,
+.base-vaga-box:focus {
   text-decoration: none; outline: none;
 }
 
-a.base-vaga-box .data{
+.base-vaga-box .data{
   font-weight: 700;
   margin: 0; padding: 0;
 }
 
-a.base-vaga-box h2 {
+.base-vaga-box h2 {
   font-size: 24px;
   font-weight: 700;
   width: 100%;
@@ -232,7 +246,7 @@ a.base-vaga-box h2 {
   margin: 12px 0; padding: 0 0 16px 0;
 }
 
-a.base-vaga-box h2 span {
+.base-vaga-box h2 span {
   float: right;
   font-size: 12px;
   font-weight: normal;
@@ -241,20 +255,109 @@ a.base-vaga-box h2 span {
   margin: 10px 0 0 0;
 }
 
-a.base-vaga-box .tags-vaga {
+.base-vaga-box .tags-vaga {
   display: flex;
   margin: 24px 0 36px 0;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
-a.base-vaga-box .desc-vaga p {
+.base-vaga-box .tags-vaga .item {
+  display: flex;
+  align-items: center;
+  margin: 0 60px 0 0;
+}
+
+.base-vaga-box .tags-vaga .item .base-icone {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 6px 0 0;
+}
+
+.base-vaga-box .desc-vaga p {
   color: #858585;
   margin: 12px 0 0 0;
   line-height: 24px;
 }
 
-a.base-vaga-box .desc-vaga p strong {
+.base-vaga-box .desc-vaga p strong {
   color: #323232;
+}
+
+.base-vaga-box .vaga-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-top: 1px solid #efefef;
+  margin: 24px 0 0 0; padding: 24px 0 0 0;
+}
+
+.base-vaga-box .vaga-footer .base-share {
+  position: relative;
+  margin: 0 18px 0 0;
+}
+
+.base-vaga-box .vaga-footer .base-share .base-hover {
+  justify-content: space-around;
+  width: 100%;
+  position: absolute;
+  top: 2px; left: 0;
+  display: flex;
+  transition: all .3s ease;
+  z-index: 1;
+}
+
+.base-vaga-box .vaga-footer .base-share .base-hover a {
+  text-decoration: none;
+  color: #2c8db5;
+}
+
+.base-vaga-box .vaga-footer .base-share .base-hover a i {
+  font-size: 28px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.base-vaga-box .vaga-footer .base-share:hover .base-hover {
+  transform: translate(0,-36px);
+}
+
+.base-vaga-box .vaga-footer a.share-btn {
+  display: flex;
+  padding: 6px 36px;
+  color: #ffffff;
+  align-items: center;
+  text-transform: uppercase;
+  background-color: #71caf3;
+  text-decoration: none;
+  position: relative;
+  z-index: 2;
+}
+
+.base-vaga-box .vaga-footer a.share-btn .base-icone {
+  position: relative;
+  font-size: 18px;
+  margin: 0 6px 0 0;
+  z-index: 2;
+}
+
+.base-vaga-box .vaga-footer a.share-btn h4 {
+  position: relative;
+  z-index: 2;
+}
+
+.base-vaga-box .vaga-footer .acessar-btn {
+  display: flex;
+  padding: 6px 36px;
+  color: #ffffff;
+  align-items: center;
+  text-transform: uppercase;
+  background-color: #1188c0;
+  text-decoration: none;
+}
+
+.base-vaga-box .vaga-footer .acessar-btn .base-icone {
+  font-size: 18px;
+  margin: 0 6px 0 0;
 }
 
 

@@ -129,6 +129,22 @@ h1, h2, h3, h5, p {
   text-decoration: none;
 }
 
+.breadcrumb.custom {
+  font-size: 13px;
+  margin: 24px 0 12px 0; padding: 0;
+}
+
+.breadcrumb.custom li.active {
+  font-weight: bold
+}
+
+.breadcrumb.custom a {
+  text-decoration: none;
+}
+
+.breadcrumb.custom a i {
+  font-size: 15px;
+}
 
 
 
