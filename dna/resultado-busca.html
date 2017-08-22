@@ -15,10 +15,83 @@
 
 		<!-- CUSTOM -->
 		<link rel="stylesheet" href="assets/styles.css">
+		<link rel="stylesheet" href="assets/resultado-busca.css">
+		<link rel="stylesheet" href="assets/modal.css">
 		<link rel="stylesheet" href="assets/media-queries.css">
 	</head>
 
 	<body>
+
+		<!-- Modal -->
+		<div class="modal custom fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">Já tem conta? Faça seu login</h4>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="row">
+									<div class="col-md-12">
+										<form class="login-form">
+											<div class="form-custom">
+												<input type="text" placeholder="Login">
+											</div>
+											<div class="form-custom">
+												<input type="text" placeholder="Senha">
+											</div>
+											<div class="form-custom">
+												<button type="submit">OK</button>
+											</div>
+										</form>
+									</div>
+
+									<div class="col-md-12">
+										<a href="#" class="password">Esqueceu sua senha?</a>
+									</div>
+
+									<div class="col-md-12">
+										<hr>
+									</div>
+
+									<div class="col-md-12">
+										<a href="#" class="btn-linkedin">Sign in with LinkedIn</a>
+									</div>
+								</div>
+								
+							</div>
+
+							<div class="col-md-5 col-md-offset-1">
+								<h5>Não tem uma conta?</h5>
+
+								<div class="row">
+									<div class="col-md-6">
+										<div class="base-vantagem">
+											<div class="base-icone"></div>
+											<p>Guarda tu CV para aplicar desde donde te encuentres</p>
+										</div>
+									</div>
+
+									<div class="col-md-6">
+										<div class="base-vantagem">
+											<div class="base-icone"></div>
+											<p>Guarda tu CV para aplicar desde donde te encuentres</p>
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<a href="#" class="btn-cadastre">Cadastre-se agora mesmo</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<div class="base-top-bar">
 			<div class="container">
 				<div class="row">
@@ -59,8 +132,8 @@
 
 						<div class="col-md-9">
 							<div class="base-register-login">
-								<a href="#" class="btn btn-white">Registrar</a>
-								<a href="#" class="btn btn-blue">Fazer Login</a>
+								<a href="#" class="btn btn-white" data-toggle="modal" data-target="#myModal">Registrar</a>
+								<a href="#" class="btn btn-blue" data-toggle="modal" data-target="#myModal">Fazer Login</a>
 							</div>
 						</div>
 					</div>
@@ -110,10 +183,10 @@
 						</div>
 
 						<div class="item">
-							<a class="btn-collapse" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+							<a class="btn-collapse" role="button" data-toggle="collapse" href="#areaFilter" aria-expanded="false" aria-controls="areaFilter">
 								Áreas
 							</a>
-							<div class="collapse in" id="collapseExample">
+							<div class="collapse in" id="areaFilter">
 								<div class="well">
 									<div class="row">
 										<div class="col-md-12">
@@ -144,9 +217,281 @@
 								</div>
 							</div>
 						</div>
+
+						<div class="item">
+							<a class="btn-collapse" role="button" data-toggle="collapse" href="#locationFilter" aria-expanded="false" aria-controls="locationFilter">
+								Locations
+							</a>
+							<div class="collapse in" id="locationFilter">
+								<div class="well">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-custom">
+												<input type="checkbox" id="check#5" name="santiago">
+												<label for="check#5">Santiago</label>
+											</div>
+										</div>
+										<div class="col-md-12">
+											<div class="form-custom">
+												<input type="checkbox" id="check#6" name="sp">
+												<label for="check#6">São Paulo</label>
+											</div>
+										</div>
+										<div class="col-md-12">
+											<div class="form-custom">
+												<input type="checkbox" id="check#7" name="bh">
+												<label for="check#7">Belo Horizonte</label>
+											</div>
+										</div>
+										<div class="col-md-12">
+											<div class="form-custom">
+												<input type="checkbox" id="check#8" name="manaus">
+												<label for="check#8">Manaus</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<a class="btn-collapse" role="button" data-toggle="collapse" href="#industriFilter" aria-expanded="false" aria-controls="industriFilter">
+								Industria
+							</a>
+							<div class="collapse in" id="industriFilter">
+								<div class="well">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-custom">
+												<input type="checkbox" id="check#9" name="mineiracao">
+												<label for="check#9">Mineiração</label>
+											</div>
+										</div>
+										<div class="col-md-12">
+											<div class="form-custom">
+												<input type="checkbox" id="check#10" name="engenharia">
+												<label for="check#10">Engenharia</label>
+											</div>
+										</div>
+										<div class="col-md-12">
+											<div class="form-custom">
+												<input type="checkbox" id="check#11" name="internet">
+												<label for="check#11">Internet</label>
+											</div>
+										</div>
+										<div class="col-md-12">
+											<div class="form-custom">
+												<input type="checkbox" id="check#12" name="outros">
+												<label for="check#12">Outros</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<a href="#" class="btn">Guardar Busqueda</a>
+
+						<a href="#" class="btn btn-light">Criar Alerta</a>
 					</div>
 				</div>
 
+				<div class="col-md-9">
+
+					<a href="#" class="base-vaga-box">
+						<div class="data">17 de Agosto de 2017</div>
+						<h2>Gerente Financeiro <span>REF - JO-00391912</span></h2>
+
+						<div class="tags-vaga">
+							<div class="item">
+								<div class="base-icone">
+								</div>
+								<p>Mineiração</p>
+							</div>
+							<div class="item">
+								<div class="base-icone">
+								</div>
+								<p>Multinacional</p>
+							</div>
+							<div class="item">
+								<div class="base-icone">
+								</div>
+								<p>Santiago - Chile</p>
+							</div>
+							<div class="item">
+								<div class="base-icone">
+								</div>
+								<p>R$ 4.578,00</p>
+							</div>
+						</div>
+						<div class="desc-vaga">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+							<p><strong>• Duis aute irure dolor in reprehenderit in voluptate</strong><br>
+							<strong>• velit esse cillum dolore eu fugiat nulla pariatur.</strong><br>
+							<strong>• Excepteur sint occaecat cupidatat non proident,</strong><br></p>
+						</div>
+					</a>
+
+					<a href="#" class="base-vaga-box">
+						<div class="data">17 de Agosto de 2017</div>
+						<h2>Gerente Financeiro <span>REF - JO-00391912</span></h2>
+
+						<div class="tags-vaga">
+							<div class="item">
+								<div class="base-icone">
+								</div>
+								<p>Mineiração</p>
+							</div>
+							<div class="item">
+								<div class="base-icone">
+								</div>
+								<p>Multinacional</p>
+							</div>
+							<div class="item">
+								<div class="base-icone">
+								</div>
+								<p>Santiago - Chile</p>
+							</div>
+							<div class="item">
+								<div class="base-icone">
+								</div>
+								<p>R$ 4.578,00</p>
+							</div>
+						</div>
+						<div class="desc-vaga">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+							<p><strong>• Duis aute irure dolor in reprehenderit in voluptate</strong><br>
+							<strong>• velit esse cillum dolore eu fugiat nulla pariatur.</strong><br>
+							<strong>• Excepteur sint occaecat cupidatat non proident,</strong><br></p>
+						</div>
+					</a>
+
+					<a href="#" class="base-vaga-box">
+						<div class="data">17 de Agosto de 2017</div>
+						<h2>Gerente Financeiro <span>REF - JO-00391912</span></h2>
+
+						<div class="tags-vaga">
+							<div class="item">
+								<div class="base-icone">
+								</div>
+								<p>Mineiração</p>
+							</div>
+							<div class="item">
+								<div class="base-icone">
+								</div>
+								<p>Multinacional</p>
+							</div>
+							<div class="item">
+								<div class="base-icone">
+								</div>
+								<p>Santiago - Chile</p>
+							</div>
+							<div class="item">
+								<div class="base-icone">
+								</div>
+								<p>R$ 4.578,00</p>
+							</div>
+						</div>
+						<div class="desc-vaga">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+							<p><strong>• Duis aute irure dolor in reprehenderit in voluptate</strong><br>
+							<strong>• velit esse cillum dolore eu fugiat nulla pariatur.</strong><br>
+							<strong>• Excepteur sint occaecat cupidatat non proident,</strong><br></p>
+						</div>
+					</a>
+
+					<a href="#" class="base-vaga-box">
+						<div class="data">17 de Agosto de 2017</div>
+						<h2>Gerente Financeiro <span>REF - JO-00391912</span></h2>
+
+						<div class="tags-vaga">
+							<div class="item">
+								<div class="base-icone">
+								</div>
+								<p>Mineiração</p>
+							</div>
+							<div class="item">
+								<div class="base-icone">
+								</div>
+								<p>Multinacional</p>
+							</div>
+							<div class="item">
+								<div class="base-icone">
+								</div>
+								<p>Santiago - Chile</p>
+							</div>
+							<div class="item">
+								<div class="base-icone">
+								</div>
+								<p>R$ 4.578,00</p>
+							</div>
+						</div>
+						<div class="desc-vaga">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+							<p><strong>• Duis aute irure dolor in reprehenderit in voluptate</strong><br>
+							<strong>• velit esse cillum dolore eu fugiat nulla pariatur.</strong><br>
+							<strong>• Excepteur sint occaecat cupidatat non proident,</strong><br></p>
+						</div>
+					</a>
+
+					<a href="#" class="base-vaga-box">
+						<div class="data">17 de Agosto de 2017</div>
+						<h2>Gerente Financeiro <span>REF - JO-00391912</span></h2>
+
+						<div class="tags-vaga">
+							<div class="item">
+								<div class="base-icone">
+								</div>
+								<p>Mineiração</p>
+							</div>
+							<div class="item">
+								<div class="base-icone">
+								</div>
+								<p>Multinacional</p>
+							</div>
+							<div class="item">
+								<div class="base-icone">
+								</div>
+								<p>Santiago - Chile</p>
+							</div>
+							<div class="item">
+								<div class="base-icone">
+								</div>
+								<p>R$ 4.578,00</p>
+							</div>
+						</div>
+						<div class="desc-vaga">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+							<p><strong>• Duis aute irure dolor in reprehenderit in voluptate</strong><br>
+							<strong>• velit esse cillum dolore eu fugiat nulla pariatur.</strong><br>
+							<strong>• Excepteur sint occaecat cupidatat non proident,</strong><br></p>
+						</div>
+					</a>
+
+				</div>
+
+			</div>
+		</div>
+
+		<div class="base-rodape">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<p>&copy; 2017 DNA Human Capital</p>
+					</div>
+					<div class="col-md-4">
+						<ul>
+							<li><a href="#">Terms</a></li>
+							<li><a href="#">Privacy</a></li>
+							<li><a href="#">Sitemap</a></li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 

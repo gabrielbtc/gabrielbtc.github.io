@@ -1,0 +1,126 @@
+.modal.custom .modal-dialog {
+  width: 860px;
+  max-width: 90%;
+  border-radius: 0px;
+}
+
+.modal.custom .modal-content {
+  border-radius: 0px;
+}
+
+.modal.custom .modal-header {
+  border-bottom: 1px solid #cccccc;
+}
+
+.modal.custom .modal-header button.close {
+  font-size: 36px;
+}
+
+.modal.custom .modal-header h4 {
+  font-size: 18px;
+  font-style: italic;
+  font-weight: bold;
+  margin: 4px 0 0 0; padding: 0px;
+  font-family: 'Merriweather', serif;
+}
+
+.modal.custom .modal-body {
+  padding: 36px 15px 60px 15px;
+  background-color: #f1f1f1
+}
+
+.modal.custom .modal-body form.login-form {
+  display: flex;
+  width: 100%;
+}
+
+.modal.custom .modal-body form.login-form .form-custom {
+  flex: 2;
+}
+
+.modal.custom .modal-body form.login-form .form-custom:nth-child(3) {
+  flex: 1;
+}
+
+.modal.custom .modal-body form.login-form .form-custom input {
+  border: none;
+  width: 100%; height: auto;
+  padding: 12px 12px 12px 8px;
+  width: 100%; height: 100%;
+}
+
+.modal.custom .modal-body form.login-form .form-custom:nth-child(2) input {
+  margin: 0 0 0 6px
+}
+
+.modal.custom .modal-body form.login-form .form-custom input::placeholder {
+  color: #214c76;
+  font-style: italic;
+  font-family: 'Merriweather', serif;
+}
+
+.modal.custom .modal-body form.login-form .form-custom button {
+  color: #ffffff;
+  font-style: italic;
+  width: 100%; height: 100%;
+  border: 0px; outline: none;
+  background-color: #2c8db5;
+  font-family: 'Merriweather', serif;
+}
+
+.modal.custom .modal-body a.password {
+  display: block;
+  color: #214c76;
+  font-size: 12px;
+  font-style: italic;
+  margin: 12px 0 0 0; padding: 0;
+  font-family: 'Merriweather', serif;
+}
+
+.modal.custom .modal-body hr {
+  width: 100%; height: 2px;
+  background-color: #cccccc;
+  border: 0px; margin: 39px 0 24px 0;
+}
+
+.modal.custom .modal-body a.btn-linkedin {
+  width: 60%;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 6px;
+  text-decoration: none;
+  background-color: #007ab6;
+  margin: 0 0 0 0; padding: 18px;
+}
+
+.modal.custom .modal-body h5 {
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Merriweather', serif;
+}
+
+.modal.custom .modal-body .base-vantagem {
+  margin: 48px 0 0 0;
+}
+
+.modal.custom .modal-body .base-vantagem p {
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #505050;
+}
+
+.modal.custom .modal-body a.btn-cadastre {
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  color: #2c8db5;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #8ad6f8;
+  margin: 24px 0 0 0; padding: 18px;
+}
