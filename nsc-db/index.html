@@ -7,6 +7,9 @@
 
 		<title>Naruto Shinobi Collection - Database</title>
 
+		<!-- GOOGLE FONTS -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
+
 		<!-- BOOTSTRAP -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -24,31 +27,54 @@
 				<div class="modal-content">
 					<div class="modal-header">
 						<div class="row">
-							<div class="col-md-3">
-								<div class="nav nav-tabs" role="tablist">
-									<a class="nav-link active" id="five-star" data-toggle="tab" href="#fivestar" role="tab">5★</a>
-									<a class="nav-link" id="six-star" data-toggle="tab" href="#sixstar" role="tab">6★</a>
-								</div>
-							</div>
-							<div class="col-md-8">
+							<div class="col-md-9">
 								<p class="type heart">Heart</p>
 								<h3>Hashirama Senju, Start of the Will of Fire</h3>
-								<h4>Cost: 90</h4>
 							</div>
-							<div class="col-md-1">
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span>
-								</button>
+							<div class="col-md-3">
+								<div class="d-flex justify-content-end">
+									<div class="nav nav-tabs" role="tablist">
+										<a class="nav-link active" id="five-star" data-toggle="tab" href="#fivestar" role="tab">5★</a>
+										<a class="nav-link" id="six-star" data-toggle="tab" href="#sixstar" role="tab">6★</a>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 					<div class="modal-body">
 						<div class="container">
 							<div class="base-unit-view">
-								
-
 								<div class="tab-content">
 									<div class="tab-pane fade active show" id="fivestar" role="tabpanel" aria-labelledby="five-star">
+										<div class="row">
+											<div class="col-md-12">
+												<table class="table table-bordered">
+													<thead>
+														<tr>
+															<th>No.</th>
+															<th>Affiliation</th>
+															<th>Cost</th>
+															<th>HP</th>
+															<th>ATK</th>
+															<th>DEF</th>
+															<th>SPD</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>573</td>
+															<td>Konoha</td>
+															<td>90</td>
+															<td>30,544</td>
+															<td>31,289</td>
+															<td>23,839</td>
+															<td>200</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+
 										<div class="row">
 											<div class="col-md-5">
 												<div class="status-unit">
@@ -57,29 +83,84 @@
 													</div>
 												</div>
 											</div>
-											<div class="col-md-7">												
+											<div class="col-md-7">
 												<div class="base-info">
+													<table class="table table-bordered">
+														<thead>
+															<tr>
+																<th>Dodge Rate</th>
+																<th>Crit Chance</th>
+																<th>Crit Damage</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>32%</td>
+																<td>25%</td>
+																<td>181%</td>
+															</tr>
+														</tbody>
+													</table>
+
+													<h2>Leader Ability</h2>
+													<p>Heart Type or Konoha Character HP, ATK and DEF +100%</p>
+
+													<hr>
+
+													<div class="row">
+														<div class="col-md-12">
+															<h3>Skills</h3>
+														</div>
+														
+														<div class="col-md-12">
+															<div class="box-combo">
+																<div class="box-line">
+																	<div class="box-header">
+																		<h4>Wood Style • Wood Golem Jutsu</h4>
+																		<p class="speed"><strong>Fast</strong></p>
+																		<p class="chakra"><strong>100</strong></p>
+																	</div>
+																	<p>Deal 3% + 20,000 to all enemies. Deal 4x damage to None affiliated characters, and 4x damage to Uchiha. (Max 16x)</p>
+																</div>
+																<div class="box-line">
+																	<div class="box-header">
+																		<h4>Now I can Read Your Swordsmanship!!</h4>
+																		<p class="speed"><strong>Fastest</strong></p>
+																		<p class="chakra"><strong>80</strong></p>
+																	</div>
+																	<p>Own ATK and Skill Damage +120%, Chakra Recovery +30%. Incoming Fire and Sharingan Skill Damage are halved</p>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<br>
+
 													<div class="row">
 														<div class="col-md-12">
 															<h3>Abilities</h3>
 														</div>
-
+														
 														<div class="col-md-12">
-															<div class="box-line">
-																<h4><span>Skill 1</span> Wood Style • Wood Golem Jutsu</h4>
-																<p>Deal 3% + 20,000 to all enemies. Deal 4x damage to None affiliated characters, and 4x damage to Uchiha. (Max 16x)</p>
-															</div>
-														</div>
-
-														<div class="col-md-12">
-															<div class="box-line">
-																<h4><span>Skill 2</span> Now I can Read Your Swordsmanship!!</h4>
-																<p>Own ATK and Skill Damage +120%, Chakra Recovery +30%. Incoming Fire and Sharingan Skill Damage are halved</p>
+															<div class="box-combo">
+																<div class="box-line">
+																	<div class="box-header">
+																		<h4>Ability #1</h4>
+																	</div>
+																	<p>Chakra +90, HP +150%</p>
+																</div>
+																<div class="box-line">
+																	<div class="box-header">
+																		<h4>Ability #2</h4>
+																	</div>
+																	<p>ATK and Skill Damage +200% when Chakra is above 50</p>
+																</div>
 															</div>
 														</div>
 													</div>
 												</div>
 											</div>
+
 										</div>
 									</div>
 
