@@ -1,0 +1,167 @@
+.base-beneficios {
+  margin: 60px 0 24px 0;
+}
+
+.base-beneficios h2 {
+  color: #323232;
+  font-size: 24px;
+  font-style: italic;
+  font-family: 'Merriweather', serif;
+  margin: 0 0 36px 0;
+}
+
+.base-beneficios .beneficio {
+  display: flex;
+  align-items: center;
+  margin: 0 0 36px 0;
+}
+
+.base-beneficios .beneficio .base-icone {
+  font-size: 30px;
+  margin: 0 18px 0 0;
+  color: #d70d2a;
+}
+
+.base-beneficios .beneficio p{
+  font-size: 11px;
+  color: #858585;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.base-cadastro {
+  margin: 0 0 132px 0; padding: 24px;
+  background-color: #ffffff;
+}
+
+.base-cadastro h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #858585;
+  margin: 0 0 24px 0; padding: 0;
+  text-transform: uppercase;
+}
+
+.base-cadastro .form-custom input {
+  width: 100%;
+  background-color: #efefef;
+  border: 0px; outline: 0;
+  margin: 0 0 12px 0; padding: 18px 12px;
+}
+
+.base-cadastro .form-custom input::placeholder {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  color: #858585;
+  font-family: 'Merriweather', serif;
+}
+
+.base-cadastro .form-custom.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.base-cadastro .form-custom.checkbox input[type="checkbox"] {
+  -webkit-appearance: none;
+  position: relative;
+  outline: none;
+  float: left;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  width: 18px; height: 16px;
+  overflow: hidden;
+  margin: 0px 0 0 0; padding: 0;
+  border-radius: 0px; cursor: pointer;
+  box-shadow: 0 0 60px rgba(0,0,0,0.1);
+}
+
+.base-cadastro .form-custom.checkbox input[type="checkbox"]:after {
+  position: absolute;
+  content: "";
+  border-radius: 0;
+  width: 100%; height: 100%;
+  margin: 0; padding: 0;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  transform: scale(0);
+  transition: all .2s ease;
+  transform-origin: center;
+}
+
+.base-cadastro .form-custom.checkbox input[type="checkbox"]:checked:after {
+  background-color: #71caf3;
+  transform: scale(1);
+}
+
+.base-cadastro .form-custom.checkbox input[type="checkbox"] + label {
+  font-size: 11px;
+  margin: 4px 0 0 0;
+  color: #858585;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.base-cadastro button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border: 0; outline: 0;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: #2c8db5;
+}
+
+.base-cadastro button .base-icone {
+  flex: 2;
+  text-align: right;
+  font-size: 24px;
+  margin: 0 12px 0 0;
+}
+
+.base-cadastro button p {
+  flex: 4;
+  text-align: left;
+}
+
+.texto-linkedin p {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 18px 0;
+}
+
+.texto-linkedin a.btn-linkedin {
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 6px;
+  text-decoration: none;
+  background-color: #007ab6;
+  margin: 12px 0 0 0; padding: 18px;
+}
+
+.texto-linkedin p.disclaimer {
+  margin: 18px 0 0 0;
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 10px;
+  color: #858585;
+  text-transform: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
