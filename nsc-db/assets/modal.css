@@ -26,18 +26,14 @@
 .modal-header .type.body {
 	background-color: #bd1a1a;
 }
+.modal-header .type.wisdom {
+	background-color: #323232;
+}
 
 .modal-header h3 {
 	font-size: 16px;
 	display: inline-block;
-	margin: 8px 0 0 0; padding: 0;
-}
-
-.modal-header h4 {
-	font-size: 14px;
-	font-weight: bold;
-	letter-spacing: 0;
-	margin: 0; padding: 0;
+	margin: 8px 0 24px 0; padding: 0;
 }
 
 .modal-header .nav {
@@ -50,8 +46,12 @@
 }
 
 .modal-header .nav.nav-tabs a {
-	padding: 12px 18px 14px 12px;
 	border: 0px;
+	padding: 12px 18px 18px 12px;
+}
+
+.modal-header .nav.nav-tabs a img {
+	width: 24px;
 }
 
 .modal-body {
@@ -66,15 +66,42 @@
 	margin: 0; padding: 0;
 }
 
-.modal-body .base-unit-view .img-unit {
-	overflow: hidden;
-	position: relative;
-	border-radius: 8px;
-	width: 100%; height: auto;
+.modal-body .base-unit-view #status-unit {
+	perspective: 1000px;
 }
 
-.modal-body .base-unit-view .img-unit img {
+.spinEffect {
+	transform: rotateY(180deg);
+}
+
+.modal-body .base-unit-view #status-unit .img-unit {
+	transition: 1s;
+	position: relative;
+	transform-style: preserve-3d;
+	transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+
+.modal-body .base-unit-view #status-unit .img-unit .front,
+.modal-body .base-unit-view #status-unit .img-unit .back {
+	position: absolute;
+	top: 0; left: 0;
 	width: 100%; height: auto;
+	backface-visibility: hidden;
+}
+
+.modal-body .base-unit-view #status-unit .img-unit .front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+.modal-body .base-unit-view #status-unit .img-unit .back {
+	transform: rotateY(180deg);
+}
+
+
+.modal-body .base-unit-view #status-unit .img-unit img {
+	width: 100%;
 }
 
 .modal-body .base-unit-view table.table {
@@ -82,6 +109,7 @@
 }
 
 .modal-body .base-unit-view table.table th {
+	background-color: #efefef;
 	font-weight: 600;
 	font-size: 10px;
 }
@@ -93,7 +121,8 @@
 
 .modal-body .base-unit-view .base-info {
 	max-height: 447px;
-	overflow: scroll;
+	overflow: hidden;
+	overflow-y: scroll;
 	background-color: #ffffff;
 	padding: 12px; border-radius: 8px;
 	box-shadow: 0 0 60px rgba(0,0,0,0.1);
