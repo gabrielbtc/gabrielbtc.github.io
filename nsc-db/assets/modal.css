@@ -1,6 +1,6 @@
 .modal.fade .modal-dialog {
-	width: 960px;
-	max-width: 70%;
+	width: 1080px;
+	max-width: 100%;
 }
 
 .modal-header {
@@ -102,13 +102,13 @@
 }
 
 .modal-body .base-unit-view .base-info {
-	height: 361px;
+	/*height: 361px;
     overflow: hidden;
-    overflow-y: scroll;
+    overflow-y: scroll;*/
     background-color: #ffffff;
     padding: 12px;
     border-radius: 8px;
-    border: 12px solid #ffffff;
+    /*border: 12px solid #ffffff;*/
     box-shadow: 0 0 60px rgba(0,0,0,0.1);
 }
 
@@ -147,7 +147,7 @@
 	color: #323232;
 	padding: 0 18px;
 	align-items: center;
-	width: 100%; height: 48px;
+	width: 100%; height: 36px;
 	background-color: #efefef;
 	border-bottom: 1px solid #cccccc;
 }
@@ -193,7 +193,7 @@
 }
 
 .modal-body .base-unit-view .base-info .box-line p {
-	font-size: 14px;
+	font-size: 12px;
 	margin: 0; padding: 12px 18px;
 }
 
@@ -203,13 +203,23 @@
 }
 
 .modal-body .base-unit-view .base-info .box-combo.gear .box-line .box-header .form-custom label h4{
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
 	font-weight: bold;
 	font-size: 12px;
+}
+
+.modal-body .base-unit-view .base-info .box-combo.gear .box-line .box-header p {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .modal-body .base-unit-view .base-info .box-combo.gear .gear-desc {
 	display: flex;
 	align-items: center;
+	min-height: 132px
 }
 
 .modal-body .base-unit-view .base-info .box-combo.gear .box-line .gear-desc .img-gear {
@@ -222,16 +232,20 @@
 	width: 72px;
 }
 
-.modal-body .base-unit-view .base-info .box-combo.gear .box-line .gear-desc div p {
-	font-size: 12px;
-	display: inline-block;
+.modal-body .base-unit-view .base-info .box-combo.gear .box-line .gear-desc div:last-child {
+	min-height: 132px;
 	border-left: 1px solid #cccccc;
 }
 
+.modal-body .base-unit-view .base-info .box-combo.gear .box-line .gear-desc div p {
+	font-size: 12px;
+	display: inline-block;
+}
+
 .modal-body .base-unit-view .base-info .box-combo.gear .box-line .gear-desc p.ex-gear {
+	width: 100%; height: 100%;
 	color: #ff3c00;
 	font-weight: bold;
-	background-color: #fff4f0;
 	border-top: 1px solid #cccccc;
 }
 
