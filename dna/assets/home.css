@@ -6,36 +6,46 @@ body.home {
   width: 100%; height: 100%;
 }
 
-.base-home-bg {
-  position: relative;
-  overflow: hidden;
-  width: 100%; min-height: 100%;
-}
-
-.base-home-bg .img-bg {
+body.home .carousel {
   position: absolute;
   top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: 1;
+}
+
+body.home .carousel .carousel-inner {
+  height: 100%;
+}
+
+body.home .carousel .item {
+  position: absolute;
   width: 100%; height: 100%;
   background-size: cover;
-  background-repeat: no-repeat;
-  z-index: 1;
 }
 
-.base-home-bg .overlay {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(0,0,0,0.2);
-  z-index: 1;
+body.home .carousel .item .container,
+body.home .carousel .item .row,
+body.home .carousel .item .col-md-5 {
+  height: 100%;
 }
 
-.conteudo-home {
+body.home .carousel .item .col-md-5 {
+  display: flex;
+  align-items: center;
+}
+
+body.home .carousel .item .base-texto-banner  {
+  height: 384px;
+  border-left: 2px solid #ffffff;
+}
+
+.base-banner-home {
   position: relative;
   margin: 180px 0 0 0;
   z-index: 3;
 }
 
-.conteudo-home h2 {
+.base-banner-home h2 {
   color: #ffffff;
   font-style: italic;
   font-size: 24px;
@@ -44,22 +54,22 @@ body.home {
   font-family: 'Merriweather', serif;
 }
 
-.base-home-bg .busca-banner {
+.base-banner-home .busca-banner {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.base-home-bg .busca-banner .form-custom {
+.base-banner-home .busca-banner .form-custom {
   flex: 4;
   margin: 18px 0 0 0;
 }
 
-.base-home-bg .busca-banner .form-custom:nth-child(3) {
+.base-banner-home .busca-banner .form-custom:nth-child(3) {
   flex: 1;
 }
 
-.base-home-bg .busca-banner input {
+.base-banner-home .busca-banner input {
   width: 100%;
   font-style: italic;
   color: #323232;
@@ -68,11 +78,11 @@ body.home {
   border: 0; outline: 0px;
 }
 
-.base-home-bg .busca-banner .form-custom:nth-child(1) input {
+.base-banner-home .busca-banner .form-custom:nth-child(1) input {
   border-right: 2px solid #cccccc;
 }
 
-.base-home-bg .busca-banner button {
+.base-banner-home .busca-banner button {
   width: 100%;
   color: #ffffff;
   margin: 0; padding: 12px;
@@ -86,4 +96,30 @@ body.home .base-rodape {
   left: 0; bottom: 0;
   margin: 0;
   z-index: 3;
+}
+
+.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
 }
