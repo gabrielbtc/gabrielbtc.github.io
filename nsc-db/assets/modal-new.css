@@ -61,7 +61,9 @@
 	position: relative;
 }
 
-.content-rarity > div {
+.content-rarity #five-star,
+.content-rarity #six-star {
+	width: 100%;
 	position: absolute;
 	top: 0; left: 0;
 }
