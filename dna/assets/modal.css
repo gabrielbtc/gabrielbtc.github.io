@@ -9,6 +9,7 @@
 }
 
 .modal.custom .modal-header {
+  padding: 18px 48px;
   border-bottom: 1px solid #cccccc;
 }
 
@@ -25,7 +26,7 @@
 }
 
 .modal.custom .modal-body {
-  padding: 36px 15px 60px 15px;
+  padding: 36px 48px 60px 48px;
   background-color: #f1f1f1
 }
 
@@ -103,12 +104,18 @@
 }
 
 .modal.custom .modal-body .base-vantagem {
-  margin: 48px 0 0 0;
+  margin: 24px 0 0 0;
+}
+
+.modal.custom .modal-body .base-vantagem .base-icone {
+  font-size: 36px;
+  color: #007ab6;
 }
 
 .modal.custom .modal-body .base-vantagem p {
   font-size: 11px;
   font-weight: bold;
+  margin: 12px 0 0 0;
   text-transform: uppercase;
   color: #505050;
 }
@@ -122,5 +129,5 @@
   text-decoration: none;
   text-transform: uppercase;
   background-color: #8ad6f8;
-  margin: 24px 0 0 0; padding: 18px;
+  margin: 48px 0 0 0; padding: 18px;
 }
