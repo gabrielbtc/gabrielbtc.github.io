@@ -35,7 +35,9 @@ h1, h2, h3, h5, p {
 
 .base-top-bar {
   padding: 12px 0;
+  position: relative;
   background-color: #ffffff;
+  z-index: 3;
 }
 
 .base-top-bar ul {
