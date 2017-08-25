@@ -8,23 +8,25 @@
 		<title>DNA Human Capital</title>
 
 		<!-- GOOGLE FONTS -->
-		<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400|Open+Sans:400,700" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans:400,700" rel="stylesheet">
 
 		<!-- BOOTSTRAP -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- CIRCLE -->
+		<link href="css/circle.css" rel="stylesheet">
 
 		<!-- ICOMOON -->
 		<link rel="stylesheet" href="https://i.icomoon.io/public/adb54f46d6/Linearicons/style.css">
 
 		<!-- CUSTOM -->
 		<link rel="stylesheet" href="assets/styles.css">
-		<link rel="stylesheet" href="assets/home.css">
+		<link rel="stylesheet" href="assets/profile.css">
 		<link rel="stylesheet" href="assets/modal.css">
 		<link rel="stylesheet" href="assets/media-queries.css">
 	</head>
 
-	<body class="home">
+	<body>
 
 		<!-- Modal -->
 		<div class="modal custom fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -146,101 +148,171 @@
 			</div>
 		</div>
 
-		<div class="base-banner-home">
-			<div class="col-md-12">
-				<div class="row">
-					<div class="col-md-12">
-						<h2>Busqueda de Ofertas <strong>em Chile</strong></h2>
+		<div class="container">
+			<div class="row">
 
-						<div class="busca-banner">
-							<div class="form-custom">
-								<input type="text" placeholder="Posición">
-							</div>
-							<div class="form-custom">
-								<input type="text" placeholder="Región">
-							</div>
-							<div class="form-custom">
-								<button><i class="icon-magnifier"></i></button>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-12">
-						<a href="#" class="busca-especial">Busqueda por Especialización</a>
-						<div class="opcoes-busca-direta">
-							<div class="row">
-								<div class="col-md-6">
-									<ul>
-										<li><a href="#">Bancos & Serviços Financeiros</a></li>
-										<li><a href="#">Digital</a></li>
-										<li><a href="#">Engenharia & Manufaturas</a></li>
-										<li><a href="#">Financeiro & Tributário</a></li>
-									</ul>
-								</div>
-								<div class="col-md-6">
-									<ul>
-										<li><a href="#">Imobiliário, Construção e Facilities</a></li>
-										<li><a href="#">Information Technology</a></li>
-										<li><a href="#">Information Technology</a></li>
-										<li><a href="#">Logística</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel">
-
-			<!-- Wrapper for slides -->
-			<div class="carousel-inner" role="listbox">
-
-				
-
-				<div class="item active" style="background-image: url(assets/img/banner-busca.jpg)">
-					<div class="overlay"></div>
-					<div class="container">
-						<div class="row">
-							<div class="col-md-5 col-md-offset-7">
-								<div class="base-texto-banner">
-									<h3>Fique por dentro</h3>
-									<h2>Empresas chilenas están en transición respecto a cargos sustentables</h2>
-									<a href="#" class="btn-banner">LEER CONTENIDO</a>
-
-									<a href="#" class="link-todas">Todas las noticias</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="item" style="background-image: url(assets/img/banner-busca.jpg)">
-					<div class="overlay"></div>
-					<div class="container">
-						<div class="row">
-							<div class="col-md-5 col-md-offset-7">
-								<div class="base-texto-banner">
-									<h3>Fique por dentro</h3>
-									<h2>Empresas chilenas están en respecto a cargos sustentables</h2>
-									<a href="#" class="btn-banner">LEER CONTENIDO</a>
-
-									<a href="#" class="link-todas">Todas las noticias</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="control-indicators">
-					<ol class="carousel-indicators">
-						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				<div class="col-md-12">
+					<ol class="breadcrumb custom">
+						<li><a href="#"><i class="icon-home"></i> Home</a></li>
+						<li class="active">Meu Perfil</li>
 					</ol>
 				</div>
+
+				<div class="col-md-3">
+					<div class="base-menu-perfil">
+						<ul>
+							<li class="active"><a href="#">MEU PERFIL</a></li>
+							<li><a href="#">MI VALOR DE MERCADO</a></li>
+							<li><a href="#">Mis busquedas & alertas</a></li>
+							<li><a href="#">Mis postulaciones</a></li>
+							<li><a href="#">Tendencias salariales</a></li>
+							<li><a href="#">Consejos utiles</a></li>
+						</ul>
+					</div>
+				</div>
+
+				
+				<div class="col-md-6">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="base-avatar">
+								<div class="img-adapt" style="background-image: url(assets/img/perfil-mock.png)"></div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="base-perfil-ficha">
+								<h1>Barack Obama da Silva</h1>
+								<h4>INFORMAÇÕES DE CONTATO</h4>
+
+								<ul>
+									<li>
+										<div class="category">Telefone:</div>
+										<div>(11) 5555-5555</div>
+									</li>
+									<li>
+										<div class="category">E-mail:</div>
+										<div>barack@obama.com</div>
+									</li>
+									<li>
+										<div class="category">Pagina Pessoal:</div>
+										<div>http://www.obama.com</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="base-formulario">
+								<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+									<!-- Indicators -->
+									<ol class="carousel-indicators">
+									<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+									<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+									<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+									</ol>
+
+									<!-- Wrapper for slides -->
+ 									<div class="carousel-inner" role="listbox">
+ 										<!-- ITEM -->
+ 										<div class="item active">
+											<form>
+												<div class="row">
+													<div class="col-md-12">
+														<h5>MINHA POSIÇÃO PROFISIONAL <div class="icon-tooltip">?</div></h5>
+													</div>
+													<div class="col-md-6">
+														<div class="form-custom">
+															<input type="text" placeholder="Área *" required>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-custom">
+															<input type="text" placeholder="Posição *" required>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-custom">
+															<input type="text" placeholder="Salário Fixo *">
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-custom">
+															<input type="text" placeholder="Salário Variável *">
+														</div>
+													</div>
+													<div class="col-md-4">
+														<div class="form-custom radio">
+															<input type="radio" name="trabalhando" id="sim">
+															<label for="sim">Estou trabalhando</label>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-custom radio">
+															<input type="radio" name="trabalhando" id="nao" checked>
+															<label for="nao">Não estou trabalhando</label>
+														</div>
+													</div>
+
+													<div class="col-md-6">
+														<div class="form-custom file">
+															<label class="cv-button">
+																Enviar meu CV
+																<input type="file">
+															</label>
+														</div>
+													</div>
+
+													<div class="col-md-12">
+														<div class="form-custom checkbox">
+															<input type="checkbox" name="newsletter" id="newsletter">
+															<label for="newsletter">Quero receber news do grupo DNA.</label>
+														</div>
+													</div>
+
+													<div class="col-md-12">
+														<hr>
+													</div>
+
+													<div class="col-md-6 col-md-offset-6">
+														<button type="submit">Enviar meus dados</button>
+													</div>
+												</div>
+											</form>
+										</div>
+										
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="base-perfil-completo">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="base-circle">
+									<div class="c100 p50 green">
+										<span>50%</span>
+										<div class="slice">
+											<div class="bar"></div>
+											<div class="fill"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<h3>PREENCHA POR COMPLETO SEU PERFIL PRA OBTER TODOS OS BENEFÍCIOS DA DNA</h3>
+								<p>Endereço<br> CEP<br> Onde Trabalho</p>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-		
-
 
 		<div class="base-rodape">
 			<div class="container">
@@ -258,8 +330,6 @@
 				</div>
 			</div>
 		</div>
-
-		
 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
