@@ -9,6 +9,7 @@
 
 		<!-- GOOGLE FONTS -->
 		<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400|Open+Sans:400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
 		<!-- BOOTSTRAP -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -145,10 +146,21 @@
 			</div>
 		</div>
 
-		<div class="base-banner-home">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
+		
+
+		<div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			</ol>
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+
+				<div class="base-banner-home">
+					<div class="col-md-12">
 						<div class="row">
 							<div class="col-md-12">
 								<h2>Busqueda de Ofertas <strong>em Chile</strong></h2>
@@ -166,30 +178,59 @@
 								</div>
 							</div>
 							<div class="col-md-12">
-								<a href="#">Busqueda por Especialización</a>
+								<a href="#" class="busca-especial">Busqueda por Especialización</a>
+								<div class="opcoes-busca-direta">
+									<div class="row">
+										<div class="col-md-6">
+											<ul>
+												<li><a href="#">Bancos & Serviços Financeiros</a></li>
+												<li><a href="#">Digital</a></li>
+												<li><a href="#">Engenharia & Manufaturas</a></li>
+												<li><a href="#">Financeiro & Tributário</a></li>
+											</ul>
+										</div>
+										<div class="col-md-6">
+											<ul>
+												<li><a href="#">Imobiliário, Construção e Facilities</a></li>
+												<li><a href="#">Information Technology</a></li>
+												<li><a href="#">Information Technology</a></li>
+												<li><a href="#">Logística</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
 
-		<div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel">
-			<!-- Indicators -->
-			<ol class="carousel-indicators">
-				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-			</ol>
-
-			<!-- Wrapper for slides -->
-			<div class="carousel-inner" role="listbox">
 				<div class="item active" style="background-image: url(assets/img/banner-busca.jpg)">
+					<div class="overlay"></div>
 					<div class="container">
 						<div class="row">
 							<div class="col-md-5 col-md-offset-7">
 								<div class="base-texto-banner">
-									TESTE
+									<h3>Fique por dentro</h3>
+									<h2>Empresas chilenas están en transición respecto a cargos sustentables</h2>
+									<a href="#" class="btn-banner">LEER CONTENIDO</a>
+
+									<a href="#" class="link-todas">Todas las noticias</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item" style="background-image: url(assets/img/banner-busca.jpg)">
+					<div class="overlay"></div>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-5 col-md-offset-7">
+								<div class="base-texto-banner">
+									<h3>Fique por dentro</h3>
+									<h2>Empresas chilenas están en respecto a cargos sustentables</h2>
+									<a href="#" class="btn-banner">LEER CONTENIDO</a>
+
+									<a href="#" class="link-todas">Todas las noticias</a>
 								</div>
 							</div>
 						</div>
@@ -207,7 +248,8 @@
 				<span class="sr-only">Next</span>
 			</a>
 		</div>
-			
+		
+
 
 		<div class="base-rodape">
 			<div class="container">
