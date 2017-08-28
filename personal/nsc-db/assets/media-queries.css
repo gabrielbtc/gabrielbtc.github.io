@@ -1,30 +1,28 @@
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575px) {
 
-	.base-resume {
-	  padding: 12% 2%;
+	.modal.fade .modal-dialog {
+	    width: 94%;
 	}
 
-	.base-resume h1 {
-		font-size: 18px;
+	.modal-header .unit-icon {
+		display: none;
 	}
 
-	.base-resume h1 span {
-	  font-size: 36px;
+
+	.content-rarity {
+	    width: 100%;
+	    height: 840px;
+	    position: relative;
 	}
 
-	.base-resume h2 {
-	  font-size: 24px;
+	.modal-body .base-unit-view .base-tables {
+	    height: 456px;
 	}
 
-	.base-resume p.study {
-		display: block;
-		padding: 12px;
-	}
-
-	.base-resume p.study a {
-		display: inline-block;
-		margin: 8px 0; padding: 1px 2px;
+	.modal-body .base-unit-view .base-tables .tab-content {
+	    max-height: 408px;
+	    overflow: scroll;
 	}
 
 }
