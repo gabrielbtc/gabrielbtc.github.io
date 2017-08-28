@@ -64,10 +64,10 @@
 												<div class="row">
 													<div class="col-md-12">
 														<ul class="nav nav-nscdb">
-															<li><a class="nav-link active" data-toggle="tab" href="#skills">Skills</a></li>
-															<li><a class="nav-link" data-toggle="tab" href="#ability">Abilities</a></li>
-															<li><a class="nav-link" data-toggle="tab" href="#status">Status</a></li>
-															<li><a class="nav-link" data-toggle="tab" href="#gear">Gear</a></li>
+															<li><a id="skills-btn" class="nav-link active" data-toggle="tab" href="#skills">Skills</a></li>
+															<li><a id="ability-btn" class="nav-link" data-toggle="tab" href="#ability">Abilities</a></li>
+															<li><a id="status-btn" class="nav-link" data-toggle="tab" href="#status">Status</a></li>
+															<li><a id="gear-btn" class="nav-link" data-toggle="tab" href="#gear">Gear</a></li>
 														</ul>
 													</div>
 													<div class="col-md-12">
@@ -312,10 +312,10 @@
 												<div class="row">
 													<div class="col-md-12">
 														<ul class="nav nav-nscdb">
-															<li><a class="nav-link active" data-toggle="tab" href="#skills-six">Skills</a></li>
-															<li><a class="nav-link" data-toggle="tab" href="#ability-six">Abilities</a></li>
-															<li><a class="nav-link" data-toggle="tab" href="#status-six">Status</a></li>
-															<li><a class="nav-link" data-toggle="tab" href="#gear-six">Gear</a></li>
+															<li><a id="skills-six-btn" class="nav-link active" data-toggle="tab" href="#skills-six">Skills</a></li>
+															<li><a id="ability-six-btn" class="nav-link" data-toggle="tab" href="#ability-six">Abilities</a></li>
+															<li><a id="status-six-btn" class="nav-link" data-toggle="tab" href="#status-six">Status</a></li>
+															<li><a id="gear-six-btn" class="nav-link" data-toggle="tab" href="#gear-six">Gear</a></li>
 														</ul>
 													</div>
 													<div class="col-md-12">
@@ -594,6 +594,46 @@
 			$('#toggleRarity').click(function(){
 			    $('#toggleRarity').toggleClass('toggle-six');
 			});
+
+			window.lastPanel = "";
+
+			window.onSelectPanel = function(panel) {
+				var _lastPanel = "";
+
+				if (panel == "ability-btn" || panel == "ability-six-btn")
+					_lastPanel = "ability";
+				else if (panel == "skills-btn" || panel == "skills-six-btn")
+					_lastPanel = "skills";
+				else if (panel == "status-btn" || panel == "status-six-btn")
+					_lastPanel = "status";
+				else if (panel == "gear-btn" || panel == "gear-six-btn")
+					_lastPanel = "gear";
+
+				if (window.lastPanel == _lastPanel)
+					return null;
+
+				window.lastPanel = _lastPanel;
+
+				if (_lastPanel == "ability")
+				{ $("#ability-btn").click(); $("#ability-six-btn").click(); }
+				if (_lastPanel == "skills")
+				{ $("#skills-btn").click(); $("#skills-six-btn").click(); }
+				if (_lastPanel == "status")
+				{ $("#status-btn").click(); $("#status-six-btn").click(); }
+				if (_lastPanel == "gear")
+				{ $("#gear-btn").click(); $("#gear-six-btn").click(); }
+
+			};
+
+			$("#ability-btn").on("click", function() { window.onSelectPanel("ability-btn"); });
+			$("#ability-six-btn").on("click", function() { window.onSelectPanel("ability-six-btn"); });
+			$("#skills-btn").on("click", function() { window.onSelectPanel("skills-btn"); });
+			$("#skills-six-btn").on("click", function() { window.onSelectPanel("skills-six-btn"); });
+			$("#status-btn").on("click", function() { window.onSelectPanel("status-btn"); });
+			$("#status-six-btn").on("click", function() { window.onSelectPanel("status-six-btn"); });
+			$("#gear-btn").on("click", function() { window.onSelectPanel("gear-btn"); });
+			$("#gear-six-btn").on("click", function() { window.onSelectPanel("gear-six-btn"); });
+
 		</script>
 
 	</body>
