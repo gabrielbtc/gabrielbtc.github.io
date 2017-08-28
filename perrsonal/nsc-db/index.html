@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+	<head lang="pt-br">
+		<!-- Required meta tags -->
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<title>Naruto Shinobi Collection - Database</title>
+
+		<!-- GOOGLE FONTS -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
+
+		<!-- BOOTSTRAP -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- CUSTOM -->
+		<link rel="stylesheet" href="assets/styles.css">
+		<link rel="stylesheet" href="assets/modal-new.css">
+		<link rel="stylesheet" href="assets/media-queries.css">
+	</head>
+
+	<body>
+
+		<!-- New Modal -->
+		<div class="modal fade" id="newModal" tabindex="-1" role="dialog" aria-labelledby="newModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+
+					<div class="modal-header">
+						<div class="row">
+							<div class="col-md-9">
+								<div class="unit-icon">
+									<img src="http://i.imgur.com/VaYo482.png">
+								</div>
+								<p class="type wisdom">Wisdom</p>
+								<h3>Obito Uchiha "Truth of Despair"</h3>
+							</div>
+							<div class="col-md-3">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="modal-body">
+						<div class="base-unit-view">
+
+							<div class="base-toggle">
+								<a class="toggle-rarity" id="toggleRarity"><img src="assets/img/trigger.png"></a>
+							</div>
+							
+							<div class="content-rarity">
+
+								<div id="five-star">
+									<div class="row">
+										<div class="col-md-4">
+											<div class="img-unit">
+												<img src="assets/img/S-0474.png">
+											</div>
+										</div>
+										<div class="col-md-8">
+											<div class="base-tables">
+												<div class="row">
+													<div class="col-md-12">
+														<ul class="nav nav-nscdb">
+															<li><a class="nav-link active" data-toggle="tab" href="#skills">Skills</a></li>
+															<li><a class="nav-link" data-toggle="tab" href="#ability">Abilities</a></li>
+															<li><a class="nav-link" data-toggle="tab" href="#gear">Gear & Stats</a></li>
+														</ul>
+													</div>
+													<div class="col-md-12">
+														<div class="tab-content">
+															<div class="tab-pane fade show active" id="skills">
+																<div class="base-skill">
+																	<div class="header">
+																		<div class="type">
+																			<h4>Sharingan</h4>
+																		</div>
+																		<div class="title">
+																			<h3>True Kamui</h3>
+																			<p>本当の神威</p>
+																		</div>
+																		<div class="speed">
+																			<p>Fast</p>
+																		</div>
+																		<div class="chakra">
+																			<p>80</p>
+																		</div>
+																	</div>
+																	<div class="description">
+																		<p>Ignores enemy resistance and causes 10.000 damage to one enemy. Including himself, damage up for each Independent ally, up to x5. Additionally, damage x5 when used on Kakashi Hatake. (Max. x25)</p>
+																	</div>
+																</div>
+																<div class="base-skill">
+																	<div class="header">
+																		<div class="type">
+																			<h4>Unique</h4>
+																		</div>
+																		<div class="title">
+																			<p>この世界ごと消えろ</p>
+																		</div>
+																		<div class="speed">
+																			<p>Very Fast</p>
+																		</div>
+																		<div class="chakra">
+																			<p>60</p>
+																		</div>
+																	</div>
+																	<div class="description">
+																		<p>User's Agility +100% and gains the Hatred state. "Special Condition: Hatred" - Loses 30% HP per Action, but Attack and Skill damage increase, up to 4 times with +1.200%</p>
+																	</div>
+																</div>
+															</div>
+															<div class="tab-pane fade" id="ability">
+																Abilities
+															</div>
+															<div class="tab-pane fade" id="gear">
+																Gears & Stats
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div id="six-star">
+									<div class="row">
+										<div class="col-md-4">
+											<div class="img-unit">
+												<img src="assets/img/S-0474.png">
+											</div>
+										</div>
+										<div class="col-md-8">
+											<div class="base-tables">
+												<div class="row">
+													<div class="col-md-12">
+														<ul class="nav nav-nscdb">
+															<li><a class="nav-link active" data-toggle="tab" href="#skills">Skills</a></li>
+															<li><a class="nav-link" data-toggle="tab" href="#ability">Abilities</a></li>
+															<li><a class="nav-link" data-toggle="tab" href="#gear">Gear & Stats</a></li>
+														</ul>
+													</div>
+													<div class="col-md-12">
+														<div class="tab-content">
+															<div class="tab-pane fade show active" id="skills">
+																<div class="base-skill">
+																	<div class="header">
+																		<div class="type">
+																			<h4>Sharingan</h4>
+																		</div>
+																		<div class="title">
+																			<h3>True Kamui</h3>
+																			<p>本当の神威</p>
+																		</div>
+																		<div class="speed">
+																			<p>Fast</p>
+																		</div>
+																		<div class="chakra">
+																			<p>80</p>
+																		</div>
+																	</div>
+																	<div class="description">
+																		<p>Ignores enemy resistance and causes 20.000 damage to one enemy. Including himself, damage up for each Independent ally, up to x5. Additionally, damage x5 when used on Kakashi Hatake. (Max. x25)</p>
+																	</div>
+																</div>
+																<div class="base-skill">
+																	<div class="header">
+																		<div class="type">
+																			<h4>Unique</h4>
+																		</div>
+																		<div class="title">
+																			<p>この世界ごと消えろ</p>
+																		</div>
+																		<div class="speed">
+																			<p>Very Fast</p>
+																		</div>
+																		<div class="chakra">
+																			<p>60</p>
+																		</div>
+																	</div>
+																	<div class="description">
+																		<p>User's Agility +150% and gains the Hatred state. "Special Condition: Hatred" - Loses 15% HP per Action, but Attack and Skill damage increase, up to 4 times with +1.600%</p>
+																	</div>
+																</div>
+															</div>
+															<div class="tab-pane fade" id="ability">
+																Abilities
+															</div>
+															<div class="tab-pane fade" id="gear">
+																Gears & Stats
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="base-header">
+						<h1>Naruto Shinobi Collection - Database</h1>
+						<p>Database for the mobile game Naruto Shinobi Collection, <strong>use the buttons bellow to navigate.</strong></p>
+					</div>
+				</div>
+				<div class="col-12">		
+
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#newModal">
+						Launch demo modal
+					</button>	
+				</div>
+				<div class="col-12">
+					<hr>
+				</div>
+			</div>
+		</div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+    	<!-- Include all compiled plugins (below), or include individual files as needed -->
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+
+		<script>
+			$('#toggleRarity').click(function(){
+			  if ( $('#six-star').css('visibility') == 'hidden' )
+			    $('#six-star').css('visibility','visible');
+			  else
+			    $('#six-star').css('visibility','hidden');
+			});
+		</script>
+
+	</body>
+</html>
