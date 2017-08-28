@@ -24,7 +24,7 @@ body.home .carousel .carousel-inner {
 
 body.home .carousel .carousel-inner .control-indicators {
   position: absolute;
-  right: 18%;
+  right: 6%;
 }
 
 body.home .carousel .carousel-inner .control-indicators ol {
@@ -122,8 +122,7 @@ body.home .carousel .item .base-texto-banner a.link-todas {
   z-index: 2;
   display: flex;
   align-items: center;
-  margin-left: 12%; 
-  margin: 10% 50% 0 12%;
+  margin: 8% 48% 0 8%;
 }
 
 .base-banner-home h2 {
