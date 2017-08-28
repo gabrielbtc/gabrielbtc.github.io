@@ -175,10 +175,7 @@ h1, h2, h3, h5, p {
   text-decoration: none;
 }
 
-.base-bar-action {
-  display: flex;
-  align-items: center;
-}
+
 
 .breadcrumb.custom {
   font-size: 13px;
@@ -197,6 +194,25 @@ h1, h2, h3, h5, p {
   font-size: 15px;
 }
 
+.base-formulario .carousel-indicators {
+      bottom: -72px;
+  }
+
+.base-formulario .carousel-indicators li {
+    background-color: #000\9;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #323232;
+}
+
+.base-formulario .carousel-indicators .active {
+    background-color: #323232;
+}
+
+.base-formulario .base-perfil-completo {
+    text-align: center;
+    margin: 36px 0 60px 0;
+    padding: 0;
+}
 
 
 
