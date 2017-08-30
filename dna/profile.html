@@ -179,7 +179,7 @@
 								<div class="img-adapt" style="background-image: url(assets/img/perfil-mock.png)"></div>
 							</div>
 						</div>
-						<div class="col-md-12">
+						<div class="col-md-6 col-sm-12">
 							<div class="base-perfil-ficha">
 								<h1>Barack Obama da Silva</h1>
 								<h4>INFORMAÇÕES DE CONTATO</h4>
@@ -203,7 +203,7 @@
 					</div>
 
 					<div class="row">
-						<div class="col-md-12">
+						<div class="col-md-12 col-sm-12">
 							<div class="base-formulario">
 								<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 									<!-- Indicators -->
@@ -219,8 +219,23 @@
  										<div class="item active">
 											<form>
 												<div class="row">
+
 													<div class="col-md-12">
-														<h5>MINHA POSIÇÃO PROFISIONAL <div class="icon-tooltip">?</div></h5>
+														<h5>MINHA POSIÇÃO PROFISIONAL</h5>
+														<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-trigger="hover">Popover on left</button>
+													</div>
+
+													<div class="col-md-4">
+														<div class="form-custom radio">
+															<input type="radio" name="trabalhando" id="sim">
+															<label for="sim">Estou trabalhando</label>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-custom radio">
+															<input type="radio" name="trabalhando" id="nao" checked>
+															<label for="nao">Não estou trabalhando</label>
+														</div>
 													</div>
 													<div class="col-md-6">
 														<div class="form-custom">
@@ -242,18 +257,11 @@
 															<input type="text" placeholder="Salário Variável *">
 														</div>
 													</div>
-													<div class="col-md-4">
-														<div class="form-custom radio">
-															<input type="radio" name="trabalhando" id="sim">
-															<label for="sim">Estou trabalhando</label>
-														</div>
+
+													<div class="col-md-12">
+														<hr>
 													</div>
-													<div class="col-md-6">
-														<div class="form-custom radio">
-															<input type="radio" name="trabalhando" id="nao" checked>
-															<label for="nao">Não estou trabalhando</label>
-														</div>
-													</div>
+													
 
 													<div class="col-md-6">
 														<div class="form-custom file">
@@ -271,11 +279,9 @@
 														</div>
 													</div>
 
-													<div class="col-md-12">
-														<hr>
-													</div>
+													
 
-													<div class="col-md-6 col-md-offset-6	">
+													<div class="col-md-6 col-md-offset-6">
 														<button type="submit">Enviar meus dados</button>
 													</div>
 												</div>
@@ -335,5 +341,13 @@
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	    <!-- Include all compiled plugins (below), or include individual files as needed -->
 	    <script src="js/bootstrap.min.js"></script>
+
+	    <script src="assets/scripts.js"></script>
+
+	    <script>
+			$(function () {
+			  $('[data-toggle="popover"]').popover()
+			})
+	    </script>
 	</body>
 </html>

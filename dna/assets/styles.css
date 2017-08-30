@@ -195,12 +195,12 @@ h1, h2, h3, h5, p {
 }
 
 .base-formulario .carousel-indicators {
-      bottom: -72px;
+      bottom: 176px;
   }
 
 .base-formulario .carousel-indicators li {
     background-color: #000\9;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(255,255,255,1);
     border: 1px solid #323232;
 }
 
