@@ -105,7 +105,9 @@
   line-height: 16px;
   text-align: center;
   border-radius: 50%;
-  border: 1px solid #323232;
+  color: #ffffff;
+  background-color: #1188c0;
+  border: 1px solid #1188c0;
   width: 18px; height: 18px;
 }
 

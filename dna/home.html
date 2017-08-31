@@ -7,10 +7,6 @@
 
 		<title>DNA Human Capital</title>
 
-		<!-- GOOGLE FONTS -->
-		<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400|Open+Sans:400,700" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-
 		<!-- BOOTSTRAP -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -25,6 +21,78 @@
 	</head>
 
 	<body class="home">
+
+		<div class="menu-float hidden">
+			<ul>
+				<li><a href="#">QUIÉNES SOMOS</a></li>
+				<li class="active">
+					<a class="btn-collapse" role="button" data-toggle="collapse" href="#areaFilter" aria-expanded="false" aria-controls="areaFilter">
+						<div>NUESTROS SERVICIOS</div>
+						<div class="base-icone">
+							<i class="icon-chevron-down"></i>
+						</div>
+					</a>
+					<div class="collapse in" id="areaFilter">
+						<div class="well">
+							<div class="row">
+								<div class="col-md-12 col-xs-12">
+									<a href="#">HeadHunting</a>
+								</div>
+								<div class="col-md-12 col-xs-12">
+									<a href="#">Assessment</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li><a href="#">DIFERENCIALES</a></li>
+				<li><a href="#">COTIZACIÓN</a></li>
+				<li><a href="#">NOTICIAS</a></li>
+				<li><a href="#">NUESTRAS OFICINAS</a></li>
+				<li><a href="#">CONTACTO</a></li>
+				<hr>
+				<li>
+					<a class="btn-collapse custom" role="button" data-toggle="collapse" href="#areaPais" aria-expanded="false" aria-controls="areaPais">
+						<div>Chile</div>
+						<div class="base-icone">
+							Cambia el pais
+						</div>
+					</a>
+					<div class="collapse" id="areaPais">
+						<div class="well">
+							<div class="row">
+								<div class="col-md-12 col-xs-12">
+									<a href="#">Chile</a>
+								</div>
+								<div class="col-md-12 col-xs-12">
+									<a href="#">Brasil</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<a class="btn-collapse custom" role="button" data-toggle="collapse" href="#areaLinguagem" aria-expanded="false" aria-controls="areaLinguagem">
+						<div>Espanhol</div>
+						<div class="base-icone">
+							TROCAR LINGUAGEM
+						</div>
+					</a>
+					<div class="collapse" id="areaLinguagem">
+						<div class="well">
+							<div class="row">
+								<div class="col-md-12 col-xs-12">
+									<a href="#">CHILE</a>
+								</div>
+								<div class="col-md-12 col-xs-12">
+									<a href="#">Brasil</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+			</div>
+		</div>
 
 		<!-- Modal -->
 		<div class="modal custom fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -136,7 +204,25 @@
 						</a>
 					</div>
 
-					<div class="col-md-9 col-sm-9 col-xs-4">
+					<div class="col-md-3 col-md-offset-6 col-sm-3 col-sm-offset-0 col-xs-4 col-xs-offset-0">
+						<div class="profile-logado dropdown">
+							<button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<div class="base-avatar">
+									<div class="img-avatar"></div>
+								</div>
+								<p>Bem vindo <strong>Ricardo Augusto</strong></p>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dLabel">
+								<ul>
+									<li><a href="#">MEU PERFIL</a></li>
+									<li><a href="#">MINHAS BUSCAS</a></li>
+									<li><a href="#">SAIR</a></li>
+								</ul>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-md-9 col-sm-9 col-xs-4 hidden">
 						<div class="base-register-login">
 							<a href="#" class="btn btn-white hidden-xs">Registrar</a>
 							<a href="#" class="btn btn-blue" data-toggle="modal" data-target="#myModal">Fazer Login</a>

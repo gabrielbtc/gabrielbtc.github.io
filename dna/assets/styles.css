@@ -1,6 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather:300i,400,400i|Montserrat:600|Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300i,400,400i|Montserrat:300,600|Open+Sans:400,700');
+
+html {
+  width: 100%; height: 100%;
+}
 
 body {
+  width: 100%; height: 100%;
   color: #323232;
   font-family: 'Open Sans', sans-serif;
   background-color: #f5f5f5;
@@ -219,6 +224,173 @@ h1, h2, h3, h4 {
     margin: 36px 0 60px 0;
     padding: 0;
 }
+
+.menu-float {
+  position: absolute;
+  top: 0; left: 0;
+  overflow: scroll;
+  background-color: #0c4157;
+  width: 480px; height: 100%;
+  z-index: 10;
+}
+
+.menu-float ul {
+  list-style: none;
+  margin: 0; padding: 60px 48px 60px 24px;
+}
+
+.menu-float ul hr {
+  border: 0px;
+  border-bottom: 1px solid #80a2b0
+}
+
+.menu-float ul li {
+  display: block;
+  width: 100%;
+  margin: 0 0 36px 0;
+}
+
+.menu-float ul li a {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #80a2b0;
+  text-decoration: none;
+  font-weight: normal;
+  text-transform: uppercase;
+  transition: all .3s ease;
+}
+
+.menu-float ul li a:hover {
+  color: #ffffff;
+}
+
+.menu-float ul li.active > a {
+  color: #dc2b44;
+}
+
+.menu-float ul li.active .collapse a {
+  color: #ffffff;
+}
+
+.menu-float ul li .btn-collapse {
+  width: 100%;
+  display: flex;
+}
+
+.menu-float ul li .btn-collapse > div {
+  flex: 6;
+}
+
+.menu-float ul li .btn-collapse .base-icone {
+  flex: 1;
+  text-align: center;
+  transition: all .3s ease;
+}
+
+.menu-float ul li .btn-collapse.collapsed .base-icone {
+  transform: rotate(180deg);
+}
+
+.menu-float ul li .well {
+  box-shadow: none;
+  color: #ffffff;
+  background-color: transparent;
+  margin: 0; padding: 12px 0 0 0;
+  border: 0px; border-radius: 0px;
+}
+
+.menu-float ul li .well a {
+  font-size: 16px;
+  margin: 12px 0 0 36px;
+  transition: all .8s ease;
+}
+
+.menu-float ul li .btn-collapse.custom > div {
+  flex: 3;
+}
+
+.menu-float ul li .btn-collapse.custom .base-icone {
+  text-align: right;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.menu-float ul li .btn-collapse.collapsed .base-icone {
+  transform: rotate(0);
+}
+
+.profile-logado {
+  margin: 4px 0 0 0;
+}
+
+.profile-logado button {
+  font-style: italic;
+  color: #858585;
+  border: none;
+  display: flex;
+  align-items: center;
+  outline: none;
+  background-color: transparent;
+  font-family: 'Merriweather', serif;
+}
+
+.profile-logado button .base-avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 14px 0 0;
+  width: 30px; height: 30px;
+  background-color: #323232;
+}
+
+.profile-logado .dropdown-menu {
+  top: 132%;
+  transform: translate(-58px,0);
+  text-align: center;
+  padding: 18px;
+  border: none;
+  box-shadow: 0 0 60px rgba(0,0,0,0.2);
+}
+
+.profile-logado .dropdown-menu:before {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  margin-left: -12px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 14px solid white
+}
+
+.profile-logado .dropdown-menu ul {
+  list-style: none;
+  padding: 0; margin: 0;
+}
+
+.profile-logado .dropdown-menu ul li {
+  margin: 0 0 12px 0; padding: 2px 0 12px 0;
+  border-bottom: 1px solid #cccccc;
+}
+
+.profile-logado .dropdown-menu ul li:last-child {
+  padding: 2px 0 0 0;
+  margin: 0; border: 0;
+}
+
+.profile-logado .dropdown-menu ul li a {
+  font-size: 12px;
+  color: #505050;
+  text-decoration: none;
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
 
 
 

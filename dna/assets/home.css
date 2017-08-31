@@ -190,7 +190,20 @@ body.home .base-rodape {
 
 .opcoes-busca-direta {
   margin: 12px 0 0 0;
+  position: relative;
   background-color: rgba(255,255,255,0.3);
+}
+
+.opcoes-busca-direta:before {
+  position: absolute;
+  top: -14px;
+  left: 24px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 14px solid rgba(255,255,255,0.3);
 }
 
 .opcoes-busca-direta ul {
