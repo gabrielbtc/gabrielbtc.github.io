@@ -6,6 +6,10 @@
   margin: 16px 0 0 0
 }
 
+.base-detalhe-job .btn-custom.blue.gradient {
+  background-image: linear-gradient(to right, #71caf3, #1188c0);
+}
+
 .base-detalhe-job h4.outros {
   font-weight: bold;
   text-transform: uppercase;
@@ -144,6 +148,9 @@
 }
 
 .base-vaga-box .vaga-footer .base-share .base-hover a {
+  opacity: 0;
+  transition: all .3s ease;
+  transform: translate(0,36px);
   text-decoration: none;
   color: #2c8db5;
 }
@@ -156,6 +163,27 @@
 
 .base-vaga-box .vaga-footer .base-share:hover .base-hover {
   transform: translate(0,-36px);
+}
+
+.base-vaga-box .vaga-footer .base-share:hover .base-hover a {
+    opacity: 1
+}
+
+.base-vaga-box .vaga-footer .base-share:hover .base-hover a:nth-child(1) {
+    transform: translate(0,0px);
+    transition-delay: .1s;
+}
+.base-vaga-box .vaga-footer .base-share:hover .base-hover a:nth-child(2) {
+    transform: translate(0,-4px);
+    transition-delay: .2s;
+}
+.base-vaga-box .vaga-footer .base-share:hover .base-hover a:nth-child(3) {
+    transform: translate(0,-4px);
+    transition-delay: .3s;
+}
+.base-vaga-box .vaga-footer .base-share:hover .base-hover a:nth-child(4) {
+    transform: translate(0,0px);
+    transition-delay: .4s;
 }
 
 .base-vaga-box .vaga-footer a.share-btn {
@@ -207,9 +235,6 @@
 .base-vaga-box.relacionados .tags-vaga .item {
   margin: 0 24px 12px 0;
 }
-
-
-
 
 
 

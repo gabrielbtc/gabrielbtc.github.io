@@ -94,11 +94,26 @@
   margin: 24px 0 132px 0; padding: 0;
 }
 
+.base-formulario .posicao-title {
+  display: flex;
+  align-items: center;
+  margin: 0 0 18px 0;
+}
+
+.base-formulario .popcustom {
+  margin: 0 0 0 0; padding: 0;
+  line-height: 16px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #323232;
+  width: 18px; height: 18px;
+}
+
 .base-formulario h5 {
   font-size: 12px;
   color: #858585;
   font-weight: bold;
-  margin: 0 0 18px 0;
+  margin: 0 8px 0 0;
 }
 
 .base-formulario h4 {
@@ -294,7 +309,33 @@
   font-size: 12px;
 }
 
+.profile-msg {
+  margin: 60px 0 0 0;
+}
 
+.profile-msg h4{
+  color: #323232;
+  margin: 0 0 18px 0; padding: 0;
+  text-transform: uppercase;
+}
+
+.profile-msg p {
+  font-weight: normal;
+  font-size: 14px;
+  margin: 0 0 18px 0; padding: 0;
+}
+
+.profile-msg a {
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: block;
+  padding: 12px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  background-image: linear-gradient(to right, #71caf3, #1188c0);
+}
 
 
 

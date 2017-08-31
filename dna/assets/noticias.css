@@ -30,6 +30,7 @@
 .base-noticias h2 {
   font-size: 24px;
   font-weight: bold;
+  color: #1b6685;
   text-transform: uppercase;
   border-bottom: 1px solid #cccccc;
   margin: 36px 0 0 0; padding: 0 0 12px 0;
@@ -75,7 +76,7 @@
   height: auto;
   color: #ffffff;
   margin: 0 0 24px 0;
-  padding: 60px 0;
+  padding: 36px 0;
   position: relative;
   background-size: cover;
   background-position: center;
@@ -97,7 +98,7 @@
 .base-img-noticia h1 {
   font-size: 24px;
   font-weight: 700;
-  margin: 12px 0; padding: 0;
+  margin: 6px 0; padding: 0;
 }
 
 .conteudo-noticia {
@@ -109,12 +110,12 @@
 
 .conteudo-noticia p {
   font-size: 12px;
-  line-height: 24px;
+  line-height: 18px;
   color: #858585;
 }
 
 .conteudo-noticia p ~ p {
-  margin: 24px 0 0 0; padding: 0;
+  margin: 16px 0 0 0; padding: 0;
 }
 
 .conteudo-noticia .share-news {
@@ -133,7 +134,7 @@
 
 .base-side-bar .item {
   border-top: 1px solid #dbdbdb;
-  margin: 36px 0 0 0; padding: 36px 0 0 0;
+  margin: 24px 0 0 0; padding: 36px 0 0 0;
 }
 
 .base-side-bar .item h4 {
@@ -153,7 +154,7 @@
 }
 
 .base-side-bar .item.categorias ul li {
-  margin: 12px 0 0 0;
+  margin: 6px 0 0 0;
 }
 
 .base-side-bar .item.tags ul li {

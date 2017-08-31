@@ -20,7 +20,7 @@
   color: #ffffff;
   position: relative;
   margin: 0 0 0 0;
-  padding: 60px 0 0 0;
+  padding: 36px 0 0 0;
   z-index: 2;
 }
 
@@ -287,14 +287,14 @@
 .base-vaga-box .vaga-footer {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   border-top: 1px solid #efefef;
   margin: 24px 0 0 0; padding: 24px 0 0 0;
 }
 
 .base-vaga-box .vaga-footer .base-share {
   position: relative;
-  margin: 0 18px 0 0;
+  margin: 0 0 0 0;
 }
 
 .base-vaga-box .vaga-footer .base-share .base-hover {
@@ -308,8 +308,11 @@
 }
 
 .base-vaga-box .vaga-footer .base-share .base-hover a {
-  text-decoration: none;
-  color: #2c8db5;
+    opacity: 0;
+    transition: all .3s ease;
+    transform: translate(0,36px);
+    text-decoration: none;
+    color: #2c8db5;
 }
 
 .base-vaga-box .vaga-footer .base-share .base-hover a i {
@@ -321,6 +324,28 @@
 .base-vaga-box .vaga-footer .base-share:hover .base-hover {
   transform: translate(0,-36px);
 }
+
+.base-vaga-box .vaga-footer .base-share:hover .base-hover a {
+    opacity: 1
+}
+
+.base-vaga-box .vaga-footer .base-share:hover .base-hover a:nth-child(1) {
+    transform: translate(0,0px);
+    transition-delay: .1s;
+}
+.base-vaga-box .vaga-footer .base-share:hover .base-hover a:nth-child(2) {
+    transform: translate(0,-4px);
+    transition-delay: .2s;
+}
+.base-vaga-box .vaga-footer .base-share:hover .base-hover a:nth-child(3) {
+    transform: translate(0,-4px);
+    transition-delay: .3s;
+}
+.base-vaga-box .vaga-footer .base-share:hover .base-hover a:nth-child(4) {
+    transform: translate(0,0px);
+    transition-delay: .4s;
+}
+
 
 .base-vaga-box .vaga-footer a.share-btn {
   display: flex;
@@ -344,6 +369,22 @@
 .base-vaga-box .vaga-footer a.share-btn h4 {
   position: relative;
   z-index: 2;
+}
+
+.base-vaga-box .vaga-footer .salvar-btn {
+  display: flex;
+  align-self: flex-start;
+  padding: 6px 36px;
+  color: #ffffff;
+  align-items: center;
+  text-transform: uppercase;
+  background-color: #1188c0;
+  text-decoration: none;
+}
+
+.base-vaga-box .vaga-footer .salvar-btn .base-icone {
+  font-size: 18px;
+  margin: 0 6px 0 0;
 }
 
 .base-vaga-box .vaga-footer .acessar-btn {

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300i,400,400i|Montserrat:600|Open+Sans:400,700');
+
 body {
   color: #323232;
   font-family: 'Open Sans', sans-serif;
@@ -7,6 +9,10 @@ body {
 
 h1, h2, h3, h5, p {
   margin: 0; padding: 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', sans-serif;
 }
 
 .btn-custom {
@@ -195,7 +201,7 @@ h1, h2, h3, h5, p {
 }
 
 .base-formulario .carousel-indicators {
-      bottom: 176px;
+      bottom: 172px;
   }
 
 .base-formulario .carousel-indicators li {
