@@ -71,6 +71,7 @@
 
 .base-filtro-busca .btn {
   width: 100%;
+  font-style: 14px;
   margin: 0 0 18px 0;
   padding: 12px 0;
   color: #ffffff;
@@ -287,14 +288,18 @@
 .base-vaga-box .vaga-footer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   border-top: 1px solid #efefef;
   margin: 24px 0 0 0; padding: 24px 0 0 0;
 }
 
 .base-vaga-box .vaga-footer .base-share {
   position: relative;
-  margin: 0 0 0 0;
+  margin: 0 6px 0 6px;
+}
+
+.base-vaga-box .vaga-footer .base-share h4 {
+  font-size: 14px;
 }
 
 .base-vaga-box .vaga-footer .base-share .base-hover {
@@ -310,7 +315,7 @@
 .base-vaga-box .vaga-footer .base-share .base-hover a {
     opacity: 0;
     transition: all .3s ease;
-    transform: translate(0,36px);
+    transform: translate(0,24px);
     text-decoration: none;
     color: #2c8db5;
 }
@@ -382,6 +387,10 @@
   text-decoration: none;
 }
 
+.base-vaga-box .vaga-footer .salvar-btn h4 {
+  font-size: 14px;
+}
+
 .base-vaga-box .vaga-footer .salvar-btn .base-icone {
   font-size: 18px;
   margin: 0 6px 0 0;
@@ -395,6 +404,10 @@
   text-transform: uppercase;
   background-color: #1188c0;
   text-decoration: none;
+}
+
+.base-vaga-box .vaga-footer .acessar-btn h4 {
+  font-size: 14px;
 }
 
 .base-vaga-box .vaga-footer .acessar-btn .base-icone {

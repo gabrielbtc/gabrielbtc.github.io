@@ -150,7 +150,7 @@
 .base-vaga-box .vaga-footer .base-share .base-hover a {
   opacity: 0;
   transition: all .3s ease;
-  transform: translate(0,36px);
+  transform: translate(0,24px);
   text-decoration: none;
   color: #2c8db5;
 }
@@ -206,6 +206,7 @@
 }
 
 .base-vaga-box .vaga-footer a.share-btn h4 {
+  font-size: 14px;
   position: relative;
   z-index: 2;
 }
@@ -218,6 +219,10 @@
   text-transform: uppercase;
   background-color: #1188c0;
   text-decoration: none;
+}
+
+.base-vaga-box .vaga-footer .acessar-btn h4 {
+  font-size: 14px;
 }
 
 .base-vaga-box .vaga-footer .acessar-btn .base-icone {
