@@ -22,7 +22,7 @@ p.note {
 	color: #323232;
 	background-color: #ffffff;
 	background-position: left center;
-	background-size: 100%;
+	background-size: cover;
 	background-image: url(../img/bg-header.png);
 	background-repeat: no-repeat;
 }
