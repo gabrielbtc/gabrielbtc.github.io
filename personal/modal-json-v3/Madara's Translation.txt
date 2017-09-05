@@ -1,0 +1,52 @@
+Madara Uchiha, End of the World
+
+Thumb Art: "http://i.imgur.com/8smz1Ab.png"
+Full Art 5*: "http://i.imgur.com/ZZKWVY3.png"
+Full Art 6*: "http://i.imgur.com/W0fYURQ.png"
+
+Stats: Just make them up
+
+Lead: Body Type and None Character Maximum HP and Skill Damage +50%
+
+5* Skills
+Skill 1: 
+Tailed Beast Bomb
+Nature: Tailed Beast, Cast Speed: Fast, Cost: 90
+Deal 3% + 20,000 to all enemies with a chance to place the enemies under "Misery" state. Deal 2x damage to enemies under "Misery" status.  [Misery: Skill Damage -20% and ATK -10%.  This Status can be stacked upto 3 times.]
+
+Skill 2:
+Is Your Heart Broken?
+Nature: Unique, Cast Speed: Fast, Cost: 80
+Own ATK and Skill Damage +80%, None Character's Chakra Cost -20%
+
+5* Abilities
+Ability 1:
+Joy of Battle
+Maximum Chakra +50, Cast Speed +1 for 9 turns
+
+Ability 2:
+Someone Who Knows the Forbidden Jutsu
+ATK and Skill Damage +50% when HP is above 50%
+
+
+6* Skills
+Skill 1: 
+Tailed Beast Bomb
+Nature: Tailed Beast, Cast Speed: Fast, Cost: 80
+Deal 3% + 50,000 to all enemies with a high chance to place the enemies under "Misery" state. Deal 2x damage to enemies under "Misery" status.  [Misery: Skill Damage -20% and ATK -20%.  This Status can be stacked upto 3 times.]
+
+Skill 2:
+Is Your Heart Broken?
+Nature: Unique, Cast Speed: Fastest, Cost: 70
+Own ATK and Skill Damage +100%, None Character's Chakra Cost -50%
+
+6* Abilities
+Ability 1:
+Joy of Battle
+Maximum Chakra +100, Cast Speed +1
+
+Ability 2:
+Someone Who Knows the Forbidden Jutsu
+ATK and Skill Damage +100%
+
+
