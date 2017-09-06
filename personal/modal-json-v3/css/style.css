@@ -1,30 +1,29 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
 body{
 	color: #323232;
-	background-color: #efefef;
-	font-family: 'Roboto', sans-serif;
+	background-color: #ffffff;
+	background-image: url(../img/pattern-bg-2.png);
 	background-repeat: repeat;
+	font-family: 'Lato', sans-serif;
 }
 
 ::-webkit-scrollbar {
 	display: none;
 }
 
-p.note {
-	color: #858585;
-	font-size: 14px;
-	margin: 18px 0 60px 0;
-}
-
 .base-header {
-	padding: 156px 0 36px 0;
 	color: #323232;
-	background-color: #ffffff;
+	overflow: hidden;
+	margin: 24px 0 0 0;
+	padding: 36px 0 0 0;
+	border-radius: 12px 12px 0 0;
 	background-position: left center;
 	background-size: cover;
 	background-image: url(../img/bg-header.png);
 	background-repeat: no-repeat;
+	border: 4px solid rgba(0,0,0,.2);
+	border-bottom: 0px
 }
 
 .base-header h1,
@@ -33,11 +32,15 @@ p.note {
 }
 
 .base-header h1 {
-	font-size: 36px;
+	color: #8f640e;
+	font-size: 30px;
 	font-weight: bold;
 	letter-spacing: 1px;
-	text-transform: uppercase;
-	margin: 0 0 12px 0;
+	margin: 36px 0 12px 0;
+}
+
+.base-header h1 span {
+	color: #c7a664;
 }
 
 .base-header p {
@@ -49,95 +52,100 @@ p.note {
 }
 
 .base-header a {
+	color: #c7a664;
 	text-decoration: underline;
 }
 
 .base-menu {
-	background-color: #ffffff;
-	outline: 1px solid #8f640e;
-	border: 2px solid #efdbac;
-	background-color: #ffffff;
-	box-shadow: 0 0 0px 2px #c7a664;
+	margin: 24px 0 0 0; padding: 8px 0;
+	border-top: 1px solid #efdbac;
+	background-color: rgba(0,0,0,0.6);
 }
 
 .base-menu ul {
 	list-style: none;
-	margin: 0; padding: 0;
+	margin: 0 30px; padding: 0;
 }
 
 .base-menu ul li {
-	margin: 0;
+	margin: 0 12px 0 0; padding: 0;
 	display: inline-block;
 }
 
 .base-menu ul li a {
 	display: block;
-	color: #b08f4c;
-	font-size: 14px;
+	color: #ffffff;
+	font-size: 11px;
 	text-decoration: none;
-	border-right: 1px solid #efefef;
-	margin: 0; padding: 12px 18px;
+	transition: all .3s ease;
+	text-transform: uppercase;
+	margin: 0; padding: 4px 12px;
 }
 
-.base-menu ul li a:hover {
-	color: #ffffff;
-	background-color: #c7a664;
+.base-menu ul li a i {
+	font-weight: bold;
+	margin: 0 4px 0 0;
 }
 
 .base-menu ul li.active a {
-	color: #ffffff;
-	background-color: #c7a664;
-}
-
-
-.base-table {
-	margin: 48px 0 0 0;
-}
-
-.base-table h2 {
-	font-size: 18px;
-	font-weight: bold;
-	margin: 0 0 36px 0; padding: 0;
-	text-transform: uppercase;
-}
-
-.base-table .dataTables_wrapper {
-    padding: 36px;
-    margin: 0 0 24px 0;
-    background: #ffffff;
-    outline: 1px solid #8f640e;
-	border: 2px solid #efdbac;
+	color: #858585;
+	border-radius: 18px;
 	background-color: #ffffff;
-	box-shadow: 0 0 0px 2px #c7a664;
 }
 
-.base-table .dataTables_wrapper .dataTables_length select {
+.base-content {
+    background: #ffffff;
+    border: 4px solid rgba(0,0,0,.2);
+    border-top: 0px;
+    border-radius: 0 0 12px 12px;
+	margin: 0px 0 24px 0; padding: 36px;
+}
+
+.base-content .alert {
+	font-size: 12px;
+	padding: 12px;
+}
+
+.base-content h2 {
+	color: #8f640e;
+	font-size: 24px;
+	font-weight: bold;
+	margin: 0; padding: 0;
+}
+
+.base-content h2 + p {
+	color: #858585;
+	margin: 0 0 24px 0;
+}
+
+.base-content .dataTables_wrapper .dataTables_length select {
 	width: 84px;
 	margin: 0 4px;
 	background-color: #ffffff;
 	border: 1px solid #cccccc;
 }
 
-.base-table .dataTables_wrapper input {
+.base-content .dataTables_wrapper input {
 	width: auto;
 	padding: 4px 12px 4px 6px;
 	border: 1px solid #cccccc;
 	position: relative;
 }
 
-.base-table .dataTables_wrapper .dataTables_length {
+.base-content .dataTables_wrapper .dataTables_length {
 	margin: 8px 0 0 0;
 }
 
-.base-table .dataTables_wrapper table.dataTable.no-footer {
-	margin: 60px 0 0 0;
+.base-content .dataTables_wrapper table.dataTable.no-footer {
+	margin: 0 0 60px 0;
+	transform: translate(0,24px);
 }
 
-.base-table .dataTables_wrapper table.dataTable.no-footer thead {
+.base-content .dataTables_wrapper table.dataTable.no-footer thead {
 	background-color: #efefef;
 }
 
-.base-table .dataTables_wrapper table.dataTable.no-footer tbody td {
+.base-content .dataTables_wrapper table.dataTable.no-footer tbody td {
 	padding: 18px 6px;
 }
 
@@ -296,4 +304,115 @@ td.rarity[rarity="6" i] {
 	background-size: 30px;
 	background-repeat: no-repeat;
 	background-image: url(../img/rarity/6.png);
+}
+
+.news-box {
+	cursor: pointer;
+	display: block;
+	overflow: hidden;
+	border-radius: 1px;
+	margin: 0 0 18px 0;
+    background-color: #ffffff;
+	border: 1px solid #efdbac;
+	outline: 1px solid #bf8b10;
+	box-shadow: 0 0 0px 1px #858585;
+	transition: all .3s ease;
+}
+
+.news-box:hover {
+	text-decoration: none;
+}
+
+.news-box .img {
+	border: 1px solid #c2bdbe;
+	width: 100%; height: 96px;
+	background-size: cover;
+}
+
+.news-box .text {
+	display: flex;
+	align-items: center;
+	border-top: 1px solid #ffffff;
+	background-image: linear-gradient(to top, #586321, #9fa54f);
+}
+
+.news-box .text.event  {
+	background-image: linear-gradient(to top, #52281f, #a16756);
+}
+.news-box .text.gacha  {
+	background-image: linear-gradient(to top, #214d60, #5294a4);
+}
+.news-box .text.sale  {
+	background-image: linear-gradient(to top, #735826, #9d8753);
+}
+
+.news-box .text .category {
+	flex: 1;
+	text-align: center;
+	font-size: 12px;
+	color: #ffffff;
+	padding: 4px 8px;
+}
+
+.news-box .text h4 {
+	flex: 5;
+	color: #9fa54f;
+	font-size: 14px;
+	border: 1px solid #9fa54f;
+	background-color: #ffffff;
+	margin: 0; padding: 12px 8px;
+}
+
+.news-box .text.event h4 {
+	color: #a16756;
+	border: 1px solid #a16756;
+}
+.news-box .text.gacha h4 {
+	color: #5294a4;
+	border: 1px solid #5294a4;
+}
+.news-box .text.sale h4 {
+	color: #9d8753;
+	border: 1px solid #9d8753;
+}
+
+
+.news-line {
+	cursor: pointer;
+	display: block;
+    overflow: hidden;
+	border-radius: 1px;
+	margin: 0 0 18px 0;
+    background-color: #ffffff;
+	border: 1px solid #efdbac;
+	outline: 1px solid #bf8b10;
+	box-shadow: 0 0 0px 1px #858585;
+}
+
+.news-line:hover {
+	text-decoration: none;
+}
+
+.news-line h4 {
+	color: #a16756;
+	font-size: 14px;
+	margin: 0; padding: 12px;
+	background: #ffffff;
+	border: 1px solid #efdbac;
+}
+
+.news-line.urgent h4 {
+	color: #cb123e;
+	font-weight: bold;
+}
+
+.footer {
+	text-align: center;
+	margin: 36px 0 0 0;
+}
+
+.footer p {
+	color: #858585;
+	font-size: 12px;
+	margin: 0; padding: 0;
 }

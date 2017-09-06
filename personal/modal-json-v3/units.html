@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Naruto Shinobi Collection Database</title>
+    <title>Naruto Shinobi Collection Database - Units</title>
 
     <!--BOOTSTRAP -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -565,7 +565,6 @@
 	</div>
 	<!-- MODAL -->
 
-	
 	<div class="container">
 		<div class="base-header">
 			<div class="row">
@@ -576,8 +575,8 @@
 				<div class="col-md-12">
 					<div class="base-menu">
 						<ul>
-							<li class="active"><a href="index.html" role="button"><i class="icon-home"></i> Front Page</a>
-							<li><a href="units.html" role="button">Units</a>
+							<li><a href="index.html" role="button">Front Page</a>
+							<li class="active"><a href="units.html" role="button"><i class="icon-magnifier"></i> Units</a>
 							<li><a ref="/gear" role="button">Ninja Gear</a>
 							<li><a href="/guides" role="button">Guides</a>
 							<li><a href="/faq" role="button">FAQ</a>
@@ -587,91 +586,34 @@
 			</div>
 		</div>
 	</div>
-	
 
+	
 	<div class="container">
 		<div class="base-content">
 			<div class="row">
-				<div class="col-md-12">
-					<h2>Game News & Announcements</h2>
-					<p>This content is translated manually. If you're looking for something more urgent, check the <a target="_blank" href="http://reddit.com/r/NarutoSc">Reddit</a>.</p>
-					<hr>
+				<div class="col-md-4">
+					<h2>Units Table</h2>
+					<p>Choose a unit to view details</p>
+					
 				</div>
-				<div class="col-md-12">
-					<div class="base-news">
-						<div class="row">
-							<div class="col-md-4">
-								<a class="news-box">
-									<div class="img" style="background-image: url(img/bg-header.jpg)"></div>
-									<div class="text event">
-										<div class="category">Event</div>
-										<h4>Text from the news in here</h4>
-									</div>
-								</a>
-							</div>
-							<div class="col-md-4">
-								<a class="news-box">
-									<div class="img" style="background-image: url(img/bg-header.jpg)"></div>
-									<div class="text gacha">
-										<div class="category">Gacha</div>
-										<h4>Text from the news in here</h4>
-									</div>
-								</a>
-							</div>
-							<div class="col-md-4">
-								<a class="news-box">
-									<div class="img" style="background-image: url(img/bg-header.jpg)"></div>
-									<div class="text sale">
-										<div class="category">Sale</div>
-										<h4>Text from the news in here</h4>
-									</div>
-								</a>
-							</div>
-							<div class="col-md-4">
-								<a class="news-box">
-									<div class="img" style="background-image: url(img/bg-header.jpg)"></div>
-									<div class="text gacha">
-										<div class="category">Gacha</div>
-										<h4>Text from the news in here</h4>
-									</div>
-								</a>
-							</div>
-							<div class="col-md-4">
-								<a class="news-box">
-									<div class="img" style="background-image: url(img/bg-header.jpg)"></div>
-									<div class="text">
-										<div class="category">News</div>
-										<h4>Text from the news in here</h4>
-									</div>
-								</a>
-							</div>
-							<div class="col-md-4">
-								<a class="news-box">
-									<div class="img" style="background-image: url(img/bg-header.jpg)"></div>
-									<div class="text">
-										<div class="category">News</div>
-										<h4>Text from the news in here</h4>
-									</div>
-								</a>
-							</div>
-							<div class="col-md-12">
-								<a class="news-line">
-									<h4>Text from the news in here</h4>
-								</a>
-							</div>
-							<div class="col-md-12">
-								<a class="news-line urgent">
-									<h4>Text from the news in here</h4>
-								</a>
-							</div>
-							<div class="col-md-12">
-								<a class="news-line">
-									<h4>Text from the news in here</h4>
-								</a>
-							</div>
-						</div>
+				<div class="col-md-8">
+					<div class="alert alert-warning" role="alert">
+						<strong>Note: Some stats are their lvl 80 stats.</strong> If you have the lvl 100 stats, feel free to share in the Reddit.
 					</div>
 				</div>
+				<div class="col-md-12">
+					<hr>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<table id="myTable" class="display" cellspacing="0" width="100%">
+						<tbody class="cards">
+						</tbody>
+					</table>
+				</div>
+
 				<div class="col-md-12">
 					<div class="footer">
 						<hr>
