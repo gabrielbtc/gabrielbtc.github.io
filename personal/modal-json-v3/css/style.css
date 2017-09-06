@@ -17,22 +17,22 @@ p.note {
 	margin: 18px 0 60px 0;
 }
 
-.header {
+.base-header {
 	padding: 156px 0 36px 0;
 	color: #323232;
 	background-color: #ffffff;
 	background-position: left center;
 	background-size: cover;
-	background-image: url(../img/bg-header-2.png);
+	background-image: url(../img/bg-header.png);
 	background-repeat: no-repeat;
 }
 
-.header h1,
-.header h2 {
+.base-header h1,
+.base-header h2 {
 	margin: 0; padding: 0;
 }
 
-.header h1 {
+.base-header h1 {
 	font-size: 36px;
 	font-weight: bold;
 	letter-spacing: 1px;
@@ -40,7 +40,7 @@ p.note {
 	margin: 0 0 12px 0;
 }
 
-.header p {
+.base-header p {
 	border-radius: 12px;
 	background-color: #ffffff;
 	display: inline-block;
@@ -48,7 +48,7 @@ p.note {
 	box-shadow: 0 0 60px rgba(0,0,0,0.1);
 }
 
-.header a {
+.base-header a {
 	text-decoration: underline;
 }
 
