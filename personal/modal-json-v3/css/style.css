@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
-
 body{
 	color: #323232;
-	background-color: #ffffff;
-	background-image: url(../img/pattern-bg-2.png);
-	background-repeat: repeat;
-	font-family: 'Lato', sans-serif;
+	background-color: #e9eaee;
+	background-position: left top;
+	background-size: 100%;
+	background-image: url(../img/bg-header-3.jpg);
+	background-repeat: no-repeat;
+	font-family: 'Arial', sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -18,12 +18,6 @@ body{
 	margin: 24px 0 0 0;
 	padding: 36px 0 0 0;
 	border-radius: 12px 12px 0 0;
-	background-position: left center;
-	background-size: cover;
-	background-image: url(../img/bg-header.png);
-	background-repeat: no-repeat;
-	border: 4px solid rgba(0,0,0,.2);
-	border-bottom: 0px
 }
 
 .base-header h1,
@@ -32,7 +26,7 @@ body{
 }
 
 .base-header h1 {
-	color: #8f640e;
+	color: #ffffff;
 	font-size: 30px;
 	font-weight: bold;
 	letter-spacing: 1px;
@@ -40,7 +34,7 @@ body{
 }
 
 .base-header h1 span {
-	color: #c7a664;
+	color: #ffffff;
 }
 
 .base-header p {
@@ -52,14 +46,13 @@ body{
 }
 
 .base-header a {
-	color: #c7a664;
+	color: #5694ff;
 	text-decoration: underline;
 }
 
 .base-menu {
-	margin: 24px 0 0 0; padding: 8px 0;
-	border-top: 1px solid #efdbac;
-	background-color: rgba(0,0,0,0.6);
+	margin: 48px 0 0 0; padding: 8px 0;
+	background-color: rgba(53,70,94,0.72);
 }
 
 .base-menu ul {
@@ -95,9 +88,7 @@ body{
 
 .base-content {
     background: #ffffff;
-    border: 4px solid rgba(0,0,0,.2);
-    border-top: 0px;
-    border-radius: 0 0 12px 12px;
+    box-shadow: 0px 2px 12px rgba(0,0,0,0.2);
 	margin: 0px 0 24px 0; padding: 36px;
 }
 
@@ -107,7 +98,7 @@ body{
 }
 
 .base-content h2 {
-	color: #8f640e;
+	color: #3871d3;
 	font-size: 24px;
 	font-weight: bold;
 	margin: 0; padding: 0;
@@ -313,9 +304,7 @@ td.rarity[rarity="6" i] {
 	border-radius: 1px;
 	margin: 0 0 18px 0;
     background-color: #ffffff;
-	border: 1px solid #efdbac;
-	outline: 1px solid #bf8b10;
-	box-shadow: 0 0 0px 1px #858585;
+	box-shadow: 0 0 60px rgba(0,0,0,0.12);
 	transition: all .3s ease;
 }
 
@@ -324,29 +313,31 @@ td.rarity[rarity="6" i] {
 }
 
 .news-box .img {
-	border: 1px solid #c2bdbe;
-	width: 100%; height: 96px;
+	flex: 100%;
 	background-size: cover;
+	width: 100%; height: 96px;
+	border-bottom: 1px solid #cccccc;
 }
 
-.news-box .text {
+.news-box .base {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
-	border-top: 1px solid #ffffff;
-	background-image: linear-gradient(to top, #586321, #9fa54f);
+	border: 1px solid #cccccc;
+	background-color: #9fa54f;
 }
 
-.news-box .text.event  {
-	background-image: linear-gradient(to top, #52281f, #a16756);
+.news-box .base.event  {
+	background-color: #a16756;
 }
-.news-box .text.gacha  {
-	background-image: linear-gradient(to top, #214d60, #5294a4);
+.news-box .base.gacha  {
+	background-color: #5294a4;
 }
-.news-box .text.sale  {
-	background-image: linear-gradient(to top, #735826, #9d8753);
+.news-box .base.sale  {
+	background-color: #9d8753;
 }
 
-.news-box .text .category {
+.news-box .base .category {
 	flex: 1;
 	text-align: center;
 	font-size: 12px;
@@ -354,26 +345,22 @@ td.rarity[rarity="6" i] {
 	padding: 4px 8px;
 }
 
-.news-box .text h4 {
+.news-box .base h4 {
 	flex: 5;
 	color: #9fa54f;
 	font-size: 14px;
-	border: 1px solid #9fa54f;
 	background-color: #ffffff;
 	margin: 0; padding: 12px 8px;
 }
 
-.news-box .text.event h4 {
+.news-box .base.event h4 {
 	color: #a16756;
-	border: 1px solid #a16756;
 }
-.news-box .text.gacha h4 {
+.news-box .base.gacha h4 {
 	color: #5294a4;
-	border: 1px solid #5294a4;
 }
-.news-box .text.sale h4 {
+.news-box .base.sale h4 {
 	color: #9d8753;
-	border: 1px solid #9d8753;
 }
 
 
@@ -384,9 +371,7 @@ td.rarity[rarity="6" i] {
 	border-radius: 1px;
 	margin: 0 0 18px 0;
     background-color: #ffffff;
-	border: 1px solid #efdbac;
-	outline: 1px solid #bf8b10;
-	box-shadow: 0 0 0px 1px #858585;
+	box-shadow: 0 0 60px rgba(0,0,0,0.12);
 }
 
 .news-line:hover {
@@ -398,7 +383,6 @@ td.rarity[rarity="6" i] {
 	font-size: 14px;
 	margin: 0; padding: 12px;
 	background: #ffffff;
-	border: 1px solid #efdbac;
 }
 
 .news-line.urgent h4 {
