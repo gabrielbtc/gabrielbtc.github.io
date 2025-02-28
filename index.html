@@ -10,22 +10,26 @@
 		<link href="./src/output.css" rel="stylesheet">
 	</head>
 
-	<body>
+	<body class="bg-stone-100 text-black text-sm">
 
-		<div class="flex justify-center items-center min-h-screen">
+		<div class="flex justify-center">
 
-			<div class="grid grid-cols-1 max-w-7xl border border-gray m-8 p-8 gap-8">
+			<div class="grid grid-cols-1 max-w-6xl m-8 gap-8 rounded-md bg-white p-8">
 
-				<div class="flex">
-					<h1 class="text-3xl font-bold">Gabriel Bassino<br> Teixeira da Costa</h1>
+				<div class="flex justify-between">
+					<h1 class="text-3xl font-mono">Gabriel Bassino<br> Teixeira da Costa</h1>
+
+					<button>
+						<span>🌞</span>
+					</button>
 				</div>
 
 				<div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl">
 					
 					<div class="col-span-2 border border-gray p-4">
-						<h2 class="text-2xl font-bold">Product Designer | Especialista</h2>
+						<h2 class="text-lg font-mono">Product Designer | Especialista</h2>
 
-						<div class="mt-8">
+						<div class="flex flex-col mt-4 gap-3">
 							<p>Profissional com mais de 10 anos de experiência em design de produtos e soluções digitais em setores diversos, incluindo Bancos, Varejo, Startups e Logística.</p>
 							<p>Especialista em usabilidade, pesquisa e estratégia de produto, com forte atuação na criação, evolução e manutenção de Design Systems e Libraries.</p>
 							<p>Sólida experiência na colaboração com equipes multidisciplinares de tecnologia e negócios, garantindo a sinergia entre experiência do usuário (UX) e objetivos estratégicos do produto.</p>
@@ -35,7 +39,7 @@
 						<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
 
 							<div class="border border-gray p-4">
-								<h6 class="text-1xl font-bold">Skills</h6>
+								<h5 class="font-mono font-bold text-sm mb-4">Skills</h5>
 								<ol>
 									<li>Estratégia de Produto</li>
 									<li>Discovery</li>
@@ -49,7 +53,7 @@
 							</div>
 
 							<div class="border border-gray p-4">
-								<h6 class="text-1xl font-bold">Ferramentas</h6>
+								<h5 class="font-mono font-bold text-sm mb-4">Ferramentas</h5>
 								<ol>
 									<li>Figma</li>
 									<li>FigJam</li>
@@ -64,23 +68,23 @@
 
 						</div>
 
-						<div class="flex flex-col gap-6 mt-8">
-							<h6>Experiências</h6>
+						<div class="flex flex-col gap-8 mt-8">
+							<h6 class="text-sm font-mono">Experiências</h6>
 
-							<div class="flex flex-col gap-2">
-								<h4 class="text-1xl font-bold">Dell Technologies | Product Designer Sênior</h4>
-								<div class="grid grid-cols-1 md:grid-cols-2">
-									<div>Dez, 2022</div>
-									<div>Atual</div>
+							<div class="flex flex-col gap-3">
+								<h4 class="font-mono font-bold text-lg">Dell Technologies | Product Designer Sênior</h4>
+								<div class="flex items-center gap-1">
+									<span class="inline-flex items-center px-2 py-1 rounded-md text-xs text-teal-800 bg-teal-50 ring-1 ring-teal-600/20 ring-inset">Dez, 2022</span>
+									<span class="inline-flex items-center px-2 py-1 rounded-md text-xs text-amber-800 bg-amber-50 ring-1 ring-amber-600/20 ring-inset">Atual</span>
 								</div>
 								<p>Atuação com foco em Discovery, Pesquisa, Prototipação e Testes de Usabilidade. Dedicação proativa para identificação de novas oportunidades de produto e estratégia, garantindo que as soluções desenvolvidas estejam alinhadas às necessidades do negócio e dos usuários. Participação na estruturação e execução da visão do produto, considerando prioridades de curto, médio e longo prazo, sempre buscando equilibrar metas estratégicas com uma experiência fluida e valiosa para os usuários.</p>
 								<p>Destaque: liderança para estruturação de DesignOps dentro da equipe, otimizando processos e aprimorando a eficiência dos entregáveis de design, garantindo maior alinhamento entre times e stakeholders.</p>
 							</div>
 
-							<div class="flex flex-col gap-2">
-								<h4 class="text-1xl font-bold">Nuvemshop | Product Designer Sênior</h4>
-								<div class="grid grid-cols-1">
-									<div>Mar, 2021 ≥ Dez, 2022</div>
+							<div class="flex flex-col gap-3">
+								<h4 class="font-mono font-bold text-lg">Nuvemshop | Product Designer Sênior</h4>
+								<div class="flex items-center">
+									<span class="inline-flex items-center px-2 py-1 rounded-md text-xs text-teal-800 bg-teal-50 ring-1 ring-teal-600/20 ring-inset">Mar, 2021 → Dez, 2022</span>
 								</div>
 								<p>Atuação em 3 projetos distintos, contribuindo para a evolução contínua da plataforma e buscando garantir a colaboração entre diferentes áreas do negócio para o alcance das métricas estratégicas.</p>
 								<p>Nuvem Pay: participação ativa nos processos de discovery, prototipação, análise estratégica e evolução do produto, com foco na integração da feature com outras áreas do negócio, como Checkout, Storefront e Administração de loja.</p>
@@ -88,10 +92,10 @@
 								<p>Nuvem Envio: desenvolvimento do painel de soluções logísticas, com participação integral em todas as etapas do projeto, incluindo discovery, ideação, pesquisa com usuários, análise de chamados, prototipação e testes de usabilidade.</p>
 							</div>
 
-							<div class="flex flex-col gap-2">
-								<h4 class="text-1xl font-bold">Banco Next - Contractor via Wipro | Product Designer Sênior</h4>
-								<div class="grid grid-cols-1">
-									<div>Abr, 2020 ≥ Mar, 2021 </div>
+							<div class="flex flex-col gap-3">
+								<h4 class="font-mono font-bold text-lg">Banco Next - Contractor via Wipro | Product Designer Sênior</h4>
+								<div class="flex items-center">
+									<span class="inline-flex items-center px-2 py-1 rounded-md text-xs text-teal-800 bg-teal-50 ring-1 ring-teal-600/20 ring-inset">Abr, 2020 → Mar, 2021 </span>
 								</div>
 								<p>Mapeamento de fluxos e jornadas para o aplicativo do banco em conjunto com stakeholders e atendendo as necessidades das unidades de negócio para juntos, construir novos produtos para o ecossistema do super app do banco next.</p>
 								<p>Trabalhei em colaboração no projeto de implementação do Pix, Débito automático, next Consórcios,Transferências bancárias. Sempre com foco em traduzir necessidades reais dos clientes, o mapeamento das dores era feito por meio de monitoramento dos chamados com a equipe de suporte e entendimento de históricos dos últimos anos.</p>
@@ -100,9 +104,9 @@
 
 							<hr>
 
-							<div>
-								<h4 class="text-1xl font-bold">Past Experiences</h4>
-								<ol>
+							<div class="flex flex-col gap-3">
+								<h4 class="font-mono text-lg">Past Experiences</h4>
+								<ol class="flex flex-col gap-2 text-xs">
 									<li>Restoque S.A. | 2020</li>
 									<li>Neotix Agência Interativa | 2019</li>
 									<li>Grupo TV1 | 2019</li>
@@ -120,14 +124,14 @@
 
 						<div class="border border-gray p-6 flex flex-col gap-6">
 							<div>
-								<h6 class="text-1xl font-bold">Localização</h6>
+								<h6 class="text-lg font-mono">Localização</h6>
 								<p>São Paulo, SP - Brasil</p>
 							</div>
 
 							<hr>
 
 							<div>
-								<h6 class="text-1xl font-bold">Formação acadêmica</h6>
+								<h6 class="text-lg font-mono">Formação acadêmica</h6>
 								<p>2019, INSPER<br> Business + Design Thinking</p>
 								<p>2018, Mergo<br> UX Weekend</p>
 								<p>2013, FMU<br> Graduação em Design Gráfico</p>
@@ -137,7 +141,7 @@
 							<hr>
 
 							<div>
-								<h6 class="text-1xl font-bold  ">Idiomas</h6>
+								<h6 class="text-lg font-mono  ">Idiomas</h6>
 								<p>Inglês<br> Fluente</p>
 								<p>Espanhol<br> Fluente</p>
 							</div>
@@ -145,7 +149,7 @@
 
 						<div class="border border-gray p-6 flex flex-col gap-6 mt-4">
 							<div>
-								<h6 class="text-1xl font-bold">Contato</h6>
+								<h6 class="text-lg font-mono">Contato</h6>
 								<p>+55 11 9 5456 2886</p>
 								<p>gabrielbtc@gmail.com</p>
 								<p>linkedin.com/in/gabrielbassino/</p>
@@ -154,7 +158,7 @@
 							<hr>
 
 							<div>
-								<h6 class="text-1xl font-bold">Links</h6>
+								<h6 class="text-lg font-mono">Links</h6>
 								<p>Case - Smart Sign-in</p>
 								<p>Case - Super Summary</p>
 								<p>dribbble.com/bassino</p>
@@ -166,23 +170,10 @@
 					</div>
 
 				</div>
-				
-		  </div>
 
-
-		  <script>
-			// On page load or when changing themes, best to add inline in `head` to avoid FOUC
-			document.documentElement.classList.toggle(
-			"dark",
-			localStorage.theme === "dark" ||
-				(!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches),
-			);
-			// Whenever the user explicitly chooses light mode
-			localStorage.theme = "light";
-			// Whenever the user explicitly chooses dark mode
-			localStorage.theme = "dark";
-			// Whenever the user explicitly chooses to respect the OS preference
-			localStorage.removeItem("theme");
-		  </script>
+			</div>
+			
+		</div>
+  		  
 	</body>
 </html>
